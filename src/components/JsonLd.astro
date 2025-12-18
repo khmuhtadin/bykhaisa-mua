@@ -1,0 +1,27 @@
+ ---
+ const jsonLd = {
+   "@context": "https://schema.org",
+   "@type": "BeautySalon",
+   "name": "ByKhaisa MUA Pontianak",
+   "image": "https://bykhaisa.com/logo.jpg",
+   "description": "Professional Makeup Artist & Hijab Stylist in Pontianak specializing in Wedding, Sangjit, and Graduation makeup.",
+   "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Pontianak",
+     "addressRegion": "Kalimantan Barat",
+     "addressCountry": "ID"
+   },
+   "priceRange": "$$",
+   "telephone": "+6287812234804",
+   "openingHoursSpecification": [
+     {
+       "@type": "OpeningHoursSpecification",
+       "dayOfWeek": ["Saturday", "Sunday"],
+       "opens": "04:00",
+       "closes": "20:00"
+     }
+   ]
+ };
+ ---
+ 
+ <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

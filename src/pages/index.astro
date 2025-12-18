@@ -1,0 +1,22 @@
+ ---
+ import Layout from '../layouts/Layout.astro';
+ import Hero from '../components/Hero.astro';
+ import Services from '../components/Services.astro';
+ import Footer from '../components/Footer.astro';
+ import JsonLd from '../components/JsonLd.astro';
+ import Navbar from '../components/Navbar';
+ import Portfolio from '../components/Portfolio';
+ import BookingForm from '../components/BookingForm';
+ ---
+ 
+ <Layout title="ByKhaisa | Pontianak Makeup Artist & Hijab Stylist">
+   <div class="min-h-screen font-sans">
+     <JsonLd />
+     <Navbar client:load />
+     <Hero />
+     <Services />
+     <Portfolio client:visible />
+     <BookingForm client:visible />
+     <Footer />
+   </div>
+ </Layout>
