@@ -1,23 +1,19 @@
 name: IndexNow Submit
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Deploy to Cloudflare Pages"]
+    types: [completed]
     branches: [main]
-    paths:
-      # Only trigger when content changes
-      - 'src/pages/**'
-      - 'public/**'
 
 jobs:
   indexnow:
     runs-on: ubuntu-latest
     name: Submit to IndexNow
+    # Only run if deploy was successful
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     
-    # Wait for Cloudflare Pages to deploy (usually takes ~1-2 min)
     steps:
-      - name: Wait for Cloudflare deployment
-        run: sleep 90
-      
       - name: Checkout
         uses: actions/checkout@v4
       
