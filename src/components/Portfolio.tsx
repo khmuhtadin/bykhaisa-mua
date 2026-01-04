@@ -46,10 +46,10 @@ const Portfolio = () => {
       alt: "Makeup Pengajian Pontianak - Acara Keluarga"
     },
     {
-      title: "Makeup Ibu-ibu",
+      title: "Glam Mom",
       img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/ibu%20ibu.webp",
-      tag: "Ibu-ibu",
-      alt: "Makeup Ibu-ibu Pontianak - MUA untuk Mama"
+      tag: "Glam Mom",
+      alt: "Glam Mom Makeup Pontianak - MUA untuk Ibu Pengantin & Wisudawan"
     },
   ];
 

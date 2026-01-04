@@ -41,8 +41,8 @@ export const SERVICES: ServiceItem[] = [
     Icon: BookOpen 
   },
   { 
-    id: 'ibu',
-    title: "Makeup Ibu-ibu", 
+    id: 'glam-mom',
+    title: "Glam Mom", 
     desc: "Makeup elegan untuk ibu pengantin, ibu wisudawan, dan acara keluarga.", 
     Icon: Heart 
   }
@@ -93,6 +93,6 @@ export const SERVICE_OPTIONS = [
   "Bridesmaid",
   "Yudisium",
   "Pengajian",
-  "Makeup Ibu-ibu",
+  "Glam Mom",
   "Lainnya"
 ];

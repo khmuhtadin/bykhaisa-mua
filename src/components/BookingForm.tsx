@@ -42,7 +42,7 @@ const SERVICE_OPTIONS = [
   "Bridesmaid",
   "Yudisium",
   "Pengajian",
-  "Makeup Ibu-ibu",
+  "Glam Mom",
   "Lainnya"
 ];
 
