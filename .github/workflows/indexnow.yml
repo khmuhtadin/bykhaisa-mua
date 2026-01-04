@@ -1,0 +1,33 @@
+name: IndexNow Submit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      # Only trigger when content changes
+      - 'src/pages/**'
+      - 'public/**'
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    name: Submit to IndexNow
+    
+    # Wait for Cloudflare Pages to deploy (usually takes ~1-2 min)
+    steps:
+      - name: Wait for Cloudflare deployment
+        run: sleep 90
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+      
+      - name: Submit to IndexNow
+        run: bun run scripts/indexnow.mjs
+      
+      - name: Summary
+        run: |
+          echo "## IndexNow Submission Complete" >> $GITHUB_STEP_SUMMARY
+          echo "Submitted all URLs to search engines for instant indexing." >> $GITHUB_STEP_SUMMARY
