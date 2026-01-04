@@ -153,8 +153,9 @@ const Portfolio = () => {
                   src={item.img}
                   alt={item.alt}
                   className="w-full h-full object-cover pointer-events-none transition duration-700 ease-in-out group-hover:scale-110"
-                  loading="lazy"
+                  loading="eager"
                   draggable="false"
+                  fetchPriority="high"
                 />
                 <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full border border-white/50">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-clay-dark">{item.tag}</span>
