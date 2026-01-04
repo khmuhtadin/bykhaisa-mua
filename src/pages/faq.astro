@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.astro';
+
+const title = "FAQ - Pertanyaan Umum tentang Jasa MUA Pontianak";
+const description = "Jawaban lengkap seputar jasa makeup artist di Pontianak. Harga, cara booking, persiapan, area layanan, dan tips dari ByAnisaPutri MUA.";
+
+const faqs = [
+  {
+    question: "Berapa harga jasa makeup di ByAnisaPutri?",
+    answer: "Harga bervariasi tergantung jenis layanan. Untuk wisuda mulai dari Rp 150.000, engagement mulai Rp 300.000, dan wedding mulai Rp 500.000. Silakan hubungi kami via WhatsApp untuk penawaran detail sesuai kebutuhan Anda."
+  },
+  {
+    question: "Apakah tersedia layanan home service?",
+    answer: "Ya! Kami menyediakan layanan home service untuk seluruh area Pontianak (Kota, Barat, Selatan, Tenggara, Utara, Timur) dan Kubu Raya. Untuk area di luar Pontianak, transport charge berlaku."
+  },
+  {
+    question: "Bagaimana cara booking MUA?",
+    answer: "Booking sangat mudah! Hubungi kami via WhatsApp di 087812234804, jelaskan tanggal acara, jenis layanan yang diinginkan, dan lokasi. Kami akan cek ketersediaan dan memberikan penawaran harga."
+  },
+  {
+    question: "Berapa lama sebelum acara sebaiknya booking?",
+    answer: "Untuk wedding, idealnya booking 2-3 bulan sebelum acara. Untuk wisuda, 1 bulan sebelumnya. Weekend dan musim wisuda (Mei & Juli) biasanya fully booked, jadi sebaiknya booking lebih awal."
+  },
+  {
+    question: "Apakah harus melakukan trial makeup?",
+    answer: "Untuk wedding, trial makeup sangat dianjurkan agar Anda bisa melihat hasil dan diskusi look yang diinginkan. Biaya trial biasanya 50% dari harga wedding makeup dan bisa dilakukan 2-4 minggu sebelum hari H."
+  },
+  {
+    question: "Produk makeup apa yang digunakan?",
+    answer: "Kami menggunakan produk high-end yang aman, tahan lama (long-wear), dan waterproof — cocok untuk cuaca tropis Pontianak yang panas. Semua alat makeup selalu disanitasi untuk menjaga kebersihan."
+  },
+  {
+    question: "Apakah termasuk hijab styling?",
+    answer: "Ya! Untuk layanan wedding dan engagement, hijab styling sudah termasuk dalam paket. Untuk wisuda, hijab styling tersedia sebagai add-on dengan biaya tambahan."
+  },
+  {
+    question: "Berapa lama proses makeup?",
+    answer: "Proses makeup biasanya memakan waktu 1-1.5 jam untuk wisuda, 1.5-2 jam untuk engagement, dan 2-3 jam untuk wedding (termasuk hijab styling). Kami selalu datang lebih awal untuk memastikan selesai tepat waktu."
+  },
+  {
+    question: "Apakah makeup tahan lama?",
+    answer: "Absolutely! Makeup kami menggunakan teknik layering dan produk waterproof yang bisa tahan 8-12 jam. Dengan setting spray premium, makeup tetap fresh meski di outdoor atau cuaca panas."
+  },
+  {
+    question: "Apakah bisa request look tertentu?",
+    answer: "Tentu! Kami sangat terbuka dengan referensi foto atau look yang Anda inginkan. Bawa foto inspirasi saat konsultasi atau trial makeup agar kami bisa memahami ekspektasi Anda."
+  },
+  {
+    question: "Bagaimana sistem pembayaran?",
+    answer: "Pembayaran dilakukan dengan sistem DP 50% untuk mengamankan tanggal booking, dan pelunasan maksimal H-3 sebelum acara. Transfer via BCA/BNI/Dana/OVO tersedia."
+  },
+  {
+    question: "Bagaimana jika harus reschedule atau cancel?",
+    answer: "Reschedule dapat dilakukan maksimal 7 hari sebelum acara (tergantung ketersediaan). Untuk cancel, DP tidak dapat dikembalikan kecuali force majeure. Kebijakan detail akan dijelaskan saat booking."
+  }
+];
+---
+
+<Layout title={title} description={description}>
+  <Navbar client:load />
+  
+  <main class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">FAQ</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="text-center mb-16">
+          <h1 class="font-serif text-4xl md:text-5xl text-clay-dark mb-4 font-medium">
+            Pertanyaan Umum (FAQ)
+          </h1>
+          <p class="text-clay-dark/70 max-w-lg mx-auto">
+            Jawaban untuk pertanyaan yang sering ditanyakan seputar jasa MUA ByAnisaPutri
+          </p>
+          <div class="w-16 h-0.5 bg-clay mx-auto mt-6"></div>
+        </header>
+
+        <!-- FAQ List -->
+        <div class="space-y-4 mb-16">
+          {faqs.map((faq, index) => (
+            <details class="bg-white rounded-sm shadow-sm group">
+              <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-bone/30 transition-colors">
+                <h2 class="font-medium text-clay-dark pr-4 text-left">{faq.question}</h2>
+                <span class="text-clay transform group-open:rotate-180 transition-transform flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="px-6 pb-6 text-clay-dark/80 leading-relaxed border-t border-bone pt-4">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <!-- Still Have Questions -->
+        <div class="bg-clay text-creme p-8 rounded-sm text-center">
+          <h2 class="font-serif text-2xl mb-4">Masih Ada Pertanyaan?</h2>
+          <p class="mb-6 opacity-90 max-w-md mx-auto">
+            Jangan ragu untuk menghubungi kami langsung. Tim kami siap membantu menjawab pertanyaan Anda.
+          </p>
+          <a 
+            href="https://wa.me/6287812234804?text=Halo%20Ci%20Anisa%2C%20saya%20mau%20tanya%20tentang%20jasa%20makeup"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+          >
+            Chat WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  })} />
+  
+  <Footer />
+</Layout>

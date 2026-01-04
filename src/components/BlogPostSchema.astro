@@ -1,0 +1,84 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  slug: string;
+  category: string;
+  readingTime?: string;
+}
+
+const { 
+  title, 
+  description, 
+  datePublished, 
+  dateModified,
+  slug,
+  category,
+  readingTime = "5 menit"
+} = Astro.props;
+
+const url = `https://byanisaputri.my.id/blog/${slug}`;
+const image = "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/og-image.webp";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": image,
+  "url": url,
+  "datePublished": datePublished,
+  "dateModified": dateModified || datePublished,
+  "author": {
+    "@type": "Person",
+    "name": "Anisa Putri",
+    "url": "https://byanisaputri.my.id/about",
+    "jobTitle": "Makeup Artist & Hijab Stylist"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ByAnisaPutri",
+    "logo": {
+      "@type": "ImageObject",
+      "url": image
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": url
+  },
+  "articleSection": category,
+  "wordCount": 1500,
+  "inLanguage": "id-ID"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://byanisaputri.my.id"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://byanisaputri.my.id/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": title,
+      "item": url
+    }
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

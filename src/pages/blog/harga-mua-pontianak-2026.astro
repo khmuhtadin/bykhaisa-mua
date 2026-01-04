@@ -2,12 +2,17 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer.astro';
+import BlogPostSchema from '../../components/BlogPostSchema.astro';
 
 const title = "Harga MUA Pontianak 2026: Panduan Lengkap Biaya Makeup Artist";
 const description = "Berapa harga makeup artist di Pontianak? Simak panduan lengkap biaya MUA untuk wedding, wisuda, engagement, dan acara lainnya di tahun 2026.";
+const slug = "harga-mua-pontianak-2026";
+const category = "Tips & Harga";
+const datePublished = "2026-01-04";
 ---
 
 <Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <BlogPostSchema title={title} description={description} slug={slug} category={category} datePublished={datePublished} readingTime="5 menit" />
   <Navbar client:load />
   
   <article class="pt-32 pb-24 bg-creme min-h-screen">

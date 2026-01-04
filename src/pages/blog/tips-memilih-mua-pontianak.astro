@@ -2,12 +2,17 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer.astro';
+import BlogPostSchema from '../../components/BlogPostSchema.astro';
 
 const title = "7 Tips Memilih MUA Pontianak yang Tepat untuk Hari Spesialmu";
 const description = "Panduan lengkap cara memilih makeup artist (MUA) di Pontianak. Dari cek portofolio hingga trial makeup, hindari kesalahan fatal saat pilih MUA untuk wedding atau wisuda.";
+const slug = "tips-memilih-mua-pontianak";
+const category = "Tips & Panduan";
+const datePublished = "2026-01-04";
 ---
 
 <Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <BlogPostSchema title={title} description={description} slug={slug} category={category} datePublished={datePublished} readingTime="7 menit" />
   <Navbar client:load />
   
   <article class="pt-32 pb-24 bg-creme min-h-screen">

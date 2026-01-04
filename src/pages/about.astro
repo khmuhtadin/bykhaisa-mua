@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.astro';
+
+const title = "Tentang ByAnisaPutri - MUA Pontianak Profesional";
+const description = "Kenali Anisa Putri, Makeup Artist & Hijab Stylist profesional di Pontianak. Spesialisasi Wedding Melayu, Engagement, dan Wisuda dengan ratusan klien bahagia sejak 2024.";
+---
+
+<Layout title={title} description={description}>
+  <Navbar client:load />
+  
+  <main class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Tentang Kami</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="text-center mb-16">
+          <h1 class="font-serif text-4xl md:text-5xl text-clay-dark mb-4 font-medium">
+            Tentang ByAnisaPutri
+          </h1>
+          <p class="text-clay-dark/70 max-w-lg mx-auto">
+            Makeup Artist & Hijab Stylist profesional di Pontianak, Kalimantan Barat
+          </p>
+          <div class="w-16 h-0.5 bg-clay mx-auto mt-6"></div>
+        </header>
+
+        <!-- About Content -->
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 class="font-serif text-2xl text-clay-dark mb-4 font-medium">Siapa Anisa Putri?</h2>
+            <p class="text-clay-dark/80 mb-4 leading-relaxed">
+              Hai! Saya <strong>Anisa Putri</strong>, seorang Makeup Artist dan Hijab Stylist berbasis di Pontianak, Kalimantan Barat. Passion saya di dunia makeup dimulai dari hobi merias teman-teman untuk acara kampus, hingga akhirnya memutuskan untuk menekuni bidang ini secara profesional.
+            </p>
+            <p class="text-clay-dark/80 mb-4 leading-relaxed">
+              Sejak tahun <strong>2024</strong>, saya telah melayani ratusan klien untuk berbagai acara — mulai dari <em>wedding akad dan resepsi</em>, <em>engagement</em>, <em>wisuda</em>, hingga <em>acara formal</em> lainnya. Setiap klien adalah unik, dan saya percaya makeup terbaik adalah yang menonjolkan kecantikan alami mereka.
+            </p>
+            <p class="text-clay-dark/80 leading-relaxed">
+              Saya spesialisasi dalam <strong>Wedding Melayu Modern</strong> — memadukan sentuhan tradisional adat Melayu Pontianak dengan teknik makeup kekinian yang natural, tahan lama, dan fotogenik.
+            </p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-sm shadow-sm">
+            <h3 class="font-serif text-xl text-clay-dark mb-6 font-medium">Mengapa Memilih Saya?</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 bg-clay text-creme rounded-full flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
+                <div>
+                  <strong class="text-clay-dark">Produk Premium</strong>
+                  <p class="text-sm text-clay-dark/70">Menggunakan produk high-end yang aman, long-wear, dan cocok untuk cuaca tropis Pontianak</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 bg-clay text-creme rounded-full flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
+                <div>
+                  <strong class="text-clay-dark">Higienis</strong>
+                  <p class="text-sm text-clay-dark/70">Selalu menggunakan alat makeup yang bersih dan tersanitasi untuk setiap klien</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 bg-clay text-creme rounded-full flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
+                <div>
+                  <strong class="text-clay-dark">On-Time</strong>
+                  <p class="text-sm text-clay-dark/70">Komitmen tepat waktu — saya menghargai momen spesial Anda</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 bg-clay text-creme rounded-full flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
+                <div>
+                  <strong class="text-clay-dark">Fleksibel</strong>
+                  <p class="text-sm text-clay-dark/70">Bisa home service ke lokasi Anda di seluruh Pontianak dan Kubu Raya</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Services Summary -->
+        <div class="mb-16">
+          <h2 class="font-serif text-2xl text-clay-dark mb-8 font-medium text-center">Layanan Saya</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+              <span class="text-3xl mb-2 block">💒</span>
+              <h3 class="font-bold text-clay-dark">Wedding</h3>
+              <p class="text-sm text-clay-dark/60">Akad & Resepsi</p>
+            </div>
+            <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+              <span class="text-3xl mb-2 block">💍</span>
+              <h3 class="font-bold text-clay-dark">Engagement</h3>
+              <p class="text-sm text-clay-dark/60">Lamaran</p>
+            </div>
+            <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+              <span class="text-3xl mb-2 block">🎓</span>
+              <h3 class="font-bold text-clay-dark">Wisuda</h3>
+              <p class="text-sm text-clay-dark/60">UNTAN, IAIN, dll</p>
+            </div>
+            <div class="bg-white p-6 rounded-sm text-center shadow-sm">
+              <span class="text-3xl mb-2 block">👩‍👧‍👦</span>
+              <h3 class="font-bold text-clay-dark">Keluarga</h3>
+              <p class="text-sm text-clay-dark/60">Bridesmaid & Ibu</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area Coverage -->
+        <div class="bg-oak/10 p-8 rounded-sm mb-16">
+          <h2 class="font-serif text-2xl text-clay-dark mb-4 font-medium">Area Layanan</h2>
+          <p class="text-clay-dark/80 mb-4">Saya melayani home service untuk area:</p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-clay-dark/70">
+            <span>• Pontianak Kota</span>
+            <span>• Pontianak Barat</span>
+            <span>• Pontianak Selatan</span>
+            <span>• Pontianak Tenggara</span>
+            <span>• Pontianak Utara</span>
+            <span>• Pontianak Timur</span>
+            <span>• Kubu Raya (Sungai Raya)</span>
+            <span>• Luar Kota Pontianak*</span>
+          </div>
+          <p class="text-xs text-clay-dark/50 mt-4">*Transport charge berlaku untuk area di luar Pontianak</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center">
+          <h2 class="font-serif text-2xl text-clay-dark mb-4 font-medium">Siap Tampil Cantik?</h2>
+          <p class="text-clay-dark/70 mb-6 max-w-md mx-auto">
+            Konsultasikan kebutuhan makeup Anda dan dapatkan penawaran terbaik.
+          </p>
+          <a 
+            href="https://wa.me/6287812234804?text=Halo%20Ci%20Anisa%2C%20saya%20mau%20konsultasi%20makeup"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-clay text-creme px-8 py-4 font-bold uppercase tracking-wider text-sm hover:bg-clay-dark transition-colors"
+          >
+            Chat WhatsApp Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- About Page Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Anisa Putri",
+      "jobTitle": "Makeup Artist & Hijab Stylist",
+      "description": "Professional Makeup Artist dan Hijab Stylist berbasis di Pontianak, Kalimantan Barat. Spesialisasi Wedding Melayu Modern, Engagement, dan Wisuda.",
+      "url": "https://byanisaputri.my.id/about",
+      "image": "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/og-image.webp",
+      "sameAs": [
+        "https://instagram.com/byanisaputri",
+        "https://tiktok.com/@byanisaputri"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pontianak",
+        "addressRegion": "Kalimantan Barat",
+        "addressCountry": "ID"
+      },
+      "knowsAbout": [
+        "Bridal Makeup",
+        "Wedding Melayu",
+        "Hijab Styling",
+        "Engagement Makeup",
+        "Graduation Makeup"
+      ]
+    }
+  })} />
+  
+  <Footer />
+</Layout>
