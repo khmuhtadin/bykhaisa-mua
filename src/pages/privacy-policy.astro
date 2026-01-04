@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.astro';
+
+const title = "Kebijakan Privasi | ByAnisaPutri MUA Pontianak";
+const description = "Kebijakan privasi ByAnisaPutri Makeup Artist Pontianak. Informasi tentang pengumpulan dan penggunaan data pribadi.";
+---
+
+<Layout title={title} description={description}>
+  <Navbar client:load />
+  
+  <main class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Kebijakan Privasi</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mb-4 leading-tight font-medium">
+            Kebijakan Privasi
+          </h1>
+          <p class="text-clay-dark/60">Terakhir diperbarui: 4 Januari 2026</p>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            ByAnisaPutri berkomitmen untuk melindungi privasi pengunjung website dan klien kami. Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda.
+          </p>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">1. Informasi yang Kami Kumpulkan</h2>
+          <p class="text-clay-dark/80 mb-4">Kami mengumpulkan informasi berikut ketika Anda menggunakan layanan kami:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Informasi kontak</strong>: Nama, nomor WhatsApp yang Anda berikan melalui form booking</li>
+            <li><strong>Informasi acara</strong>: Tanggal acara, jenis layanan, lokasi</li>
+            <li><strong>Data teknis</strong>: Alamat IP, jenis browser (dikumpulkan secara otomatis)</li>
+          </ul>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">2. Penggunaan Informasi</h2>
+          <p class="text-clay-dark/80 mb-4">Informasi yang kami kumpulkan digunakan untuk:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Memproses dan mengkonfirmasi booking makeup</li>
+            <li>Menghubungi Anda terkait layanan yang diminta</li>
+            <li>Mengirimkan informasi pricelist dan ketersediaan jadwal</li>
+            <li>Meningkatkan kualitas layanan kami</li>
+          </ul>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">3. Perlindungan Data</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Kami melindungi informasi Anda dengan cara:
+          </p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Tidak menjual atau membagikan data pribadi ke pihak ketiga</li>
+            <li>Menyimpan data dengan aman dan terbatas aksesnya</li>
+            <li>Menggunakan HTTPS untuk enkripsi data</li>
+            <li>Menghapus data klien setelah layanan selesai (kecuali diminta untuk arsip)</li>
+          </ul>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">4. Penggunaan WhatsApp</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Form booking di website ini mengarahkan Anda ke WhatsApp untuk komunikasi langsung. Percakapan WhatsApp tunduk pada <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-clay underline">Kebijakan Privasi WhatsApp</a>. Kami menjaga kerahasiaan semua percakapan booking.
+          </p>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">5. Foto dan Portfolio</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Foto hasil makeup yang ditampilkan di website dan media sosial kami hanya dipublikasikan setelah mendapat izin dari klien. Jika Anda adalah klien dan ingin foto Anda dihapus, silakan hubungi kami.
+          </p>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">6. Cookies</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Website ini menggunakan cookies minimal untuk fungsi dasar website. Kami tidak menggunakan cookies untuk tracking atau iklan pihak ketiga.
+          </p>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">7. Hak Anda</h2>
+          <p class="text-clay-dark/80 mb-4">Anda berhak untuk:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Meminta akses ke data pribadi Anda yang kami simpan</li>
+            <li>Meminta penghapusan data pribadi Anda</li>
+            <li>Menolak penggunaan foto Anda untuk portfolio</li>
+          </ul>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">8. Kontak</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami:
+          </p>
+          <div class="bg-white rounded-sm p-6 border border-bone">
+            <p class="text-clay-dark/80 mb-2"><strong>ByAnisaPutri</strong></p>
+            <p class="text-clay-dark/80 mb-2">WhatsApp: <a href="https://wa.me/6287812234804" class="text-clay underline">+62 878-1223-4804</a></p>
+            <p class="text-clay-dark/80 mb-2">Instagram: <a href="https://instagram.com/byanisaputri" target="_blank" rel="noopener noreferrer" class="text-clay underline">@byanisaputri</a></p>
+            <p class="text-clay-dark/80">Lokasi: Pontianak, Kalimantan Barat</p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">9. Perubahan Kebijakan</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Kami dapat memperbarui kebijakan privasi ini sewaktu-waktu. Perubahan akan dipublikasikan di halaman ini dengan tanggal pembaruan terbaru.
+          </p>
+        </div>
+        
+        <!-- Back Link -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <a href="/" class="text-clay font-bold uppercase tracking-wider text-sm hover:text-clay-dark transition-colors">
+            ← Kembali ke Beranda
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

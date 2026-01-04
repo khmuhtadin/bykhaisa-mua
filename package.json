@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "indexnow": "node scripts/indexnow.mjs",
+    "deploy": "astro build && bunx wrangler pages deploy dist --commit-dirty=true && node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.0.0",
