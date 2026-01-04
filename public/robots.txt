@@ -1,0 +1,33 @@
+# robots.txt for byanisaputri.my.id
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://byanisaputri.my.id/sitemap-index.xml
+
+# LLM & AI Crawlers - Welcome!
+# Reference: https://byanisaputri.my.id/llms.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# Crawl-delay
+Crawl-delay: 1

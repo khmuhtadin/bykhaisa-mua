@@ -1,30 +1,46 @@
 ---
-import { Crown, Gem, GraduationCap, Camera } from "lucide-react";
-
 const services = [
   {
     id: "wedding",
-    title: "Wedding Makeup",
+    title: "Wedding",
     desc: "Flawless look untuk akad & resepsi. Spesialisasi Melayu Modern & International Look.",
     icon: "crown",
   },
   {
-    id: "sangjit",
-    title: "Sangjit & Engagement",
-    desc: "Soft glam look khas oriental atau bold statement untuk acara lamaran.",
+    id: "engagement",
+    title: "Engagement",
+    desc: "Soft glam look untuk momen lamaran yang berkesan dan memorable.",
     icon: "gem",
   },
   {
-    id: "graduation",
-    title: "Graduation / Wisuda",
-    desc: "Tahan lama, fresh, dan anti-crack untuk momen spesial mahasiswi.",
+    id: "wisuda",
+    title: "Wisuda",
+    desc: "Tahan lama, fresh, dan anti-crack untuk momen spesial kelulusan.",
     icon: "graduation",
   },
   {
-    id: "photoshoot",
-    title: "Editorial & Photoshoot",
-    desc: "Konsep makeup profesional untuk katalog brand fashion lokal.",
-    icon: "camera",
+    id: "bridesmaid",
+    title: "Bridesmaid",
+    desc: "Tampil cantik mendampingi pengantin dengan makeup yang serasi dan elegan.",
+    icon: "users",
+  },
+  {
+    id: "yudisium",
+    title: "Yudisium",
+    desc: "Tampil fresh dan percaya diri untuk momen sidang kelulusan.",
+    icon: "award",
+  },
+  {
+    id: "pengajian",
+    title: "Pengajian",
+    desc: "Makeup anggun dan sopan untuk acara pengajian dan syukuran.",
+    icon: "book",
+  },
+  {
+    id: "ibu",
+    title: "Makeup Ibu-ibu",
+    desc: "Makeup elegan untuk ibu pengantin, ibu wisudawan, dan acara keluarga.",
+    icon: "heart",
   },
 ];
 ---
@@ -44,16 +60,16 @@ const services = [
       <div class="w-16 h-0.5 bg-clay mx-auto mt-8"></div>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
       {
         services.map((svc) => (
-          <div class="p-10 border border-creme bg-creme/20 hover:border-oak/30 hover:bg-white hover:shadow-[0_20px_40px_-15px_rgba(133,124,108,0.15)] hover:-translate-y-1 transition duration-500 rounded-sm group text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white border border-bone text-clay group-hover:bg-clay group-hover:border-clay group-hover:text-creme transition-colors duration-300">
+          <div class="p-6 md:p-10 border border-creme bg-creme/20 hover:border-oak/30 hover:bg-white hover:shadow-[0_20px_40px_-15px_rgba(133,124,108,0.15)] hover:-translate-y-1 transition duration-500 rounded-sm group text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 mb-4 md:mb-6 rounded-full bg-white border border-bone text-clay group-hover:bg-clay group-hover:border-clay group-hover:text-creme transition-colors duration-300">
               {svc.icon === "crown" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="26"
+                  height="26"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -65,11 +81,29 @@ const services = [
                   <path d="M5 21h14" />
                 </svg>
               )}
+              {svc.icon === "users" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              )}
               {svc.icon === "gem" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="26"
+                  height="26"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -82,11 +116,42 @@ const services = [
                   <path d="M2 9h20" />
                 </svg>
               )}
+              {svc.icon === "book" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                </svg>
+              )}
+              {svc.icon === "award" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              )}
               {svc.icon === "graduation" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="26"
+                  height="26"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -98,11 +163,11 @@ const services = [
                   <path d="M6 12v5c3 3 9 3 12 0v-5" />
                 </svg>
               )}
-              {svc.icon === "camera" && (
+              {svc.icon === "heart" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="26"
+                  height="26"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -110,15 +175,14 @@ const services = [
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
-                  <circle cx="12" cy="13" r="3" />
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                 </svg>
               )}
             </div>
-            <h3 class="font-serif text-xl mb-3 text-clay-dark font-semibold">
+            <h3 class="font-serif text-lg md:text-xl mb-2 md:mb-3 text-clay-dark font-semibold">
               {svc.title}
             </h3>
-            <p class="text-clay-dark/70 text-sm leading-relaxed">{svc.desc}</p>
+            <p class="text-clay-dark/70 text-xs md:text-sm leading-relaxed">{svc.desc}</p>
           </div>
         ))
       }

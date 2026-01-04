@@ -1,29 +1,77 @@
- ---
- interface Props {
-   title: string;
-   description?: string;
- }
- 
- const { title, description = "Jasa Makeup Artist & Hijab Stylist Pontianak. Spesialis Wedding Melayu, Sangjit, dan Wisuda. Booking sekarang via WhatsApp." } = Astro.props;
- ---
- 
- <!doctype html>
- <html lang="id">
-   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <meta name="description" content={description} />
-     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-     <meta name="generator" content={Astro.generator} />
-     
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-     
-     <title>{title}</title>
-   </head>
-   <body>
-     <slot />
-   </body>
- </html>
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, "https://byanisaputri.my.id");
+
+const { 
+  title, 
+  description = "Jasa Makeup Artist & Hijab Stylist Pontianak. Spesialis Wedding Melayu, Engagement, dan Wisuda. Booking sekarang via WhatsApp.",
+  image = "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/og-image.jpg"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="MUA Pontianak, Makeup Artist Pontianak, Rias Pengantin Pontianak, Makeup Wedding Pontianak, Hijab Stylist Pontianak, MUA Wisuda Pontianak, Makeup Engagement Pontianak, ByAnisaPutri" />
+    <meta name="author" content="ByAnisaPutri" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="ByAnisaPutri MUA Pontianak" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.svg" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#857C6C" />
+    <meta name="msapplication-TileColor" content="#857C6C" />
+    
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="ID-KB" />
+    <meta name="geo.placename" content="Pontianak" />
+    <meta name="geo.position" content="-0.0263;109.3425" />
+    <meta name="ICBM" content="-0.0263, 109.3425" />
+    
+    <!-- Generator -->
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

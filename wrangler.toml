@@ -1,5 +1,6 @@
- name = "bykhaisa-mua"
+ name = "byanisaputri-mua"
  compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
  
  # For static site deployment to Cloudflare Pages
  # Deploy with: bunx wrangler pages deploy dist

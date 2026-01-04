@@ -13,7 +13,7 @@ const TESTIMONIALS = [
   {
     id: 2,
     name: "Jessica T.",
-    text: "Ci Isa ngerti banget tone muka aku. Sangjit look-nya elegan, gak menor tapi pangling.",
+    text: "Ci Anisa ngerti banget tone muka aku. Sangjit look-nya elegan, gak menor tapi pangling.",
     event: "Sangjit"
   },
   {
@@ -36,12 +36,13 @@ const LOCATIONS = [
 ];
 
 const SERVICE_OPTIONS = [
-  "Wedding Makeup (Akad/Resepsi)",
-  "Sangjit / Engagement",
-  "Graduation / Wisuda",
-  "Bridesmaid / Party",
-  "Pre-wedding Photoshoot",
-  "Private Makeup Course",
+  "Wedding (Akad/Resepsi)",
+  "Engagement / Lamaran",
+  "Wisuda",
+  "Bridesmaid",
+  "Yudisium",
+  "Pengajian",
+  "Makeup Ibu-ibu",
   "Lainnya"
 ];
 
@@ -81,7 +82,7 @@ const BookingForm = () => {
     const dateObj = new Date(formData.date);
     const dateStr = isNaN(dateObj.getTime()) ? formData.date : dateObj.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
-    const message = `Halo kak Isa (@bykhaisa), saya tertarik untuk booking makeup.%0A%0A` +
+    const message = `Halo kak Anisa (@byanisaputri), saya tertarik untuk booking makeup.%0A%0A` +
       `*Detail Booking:*%0A` +
       `👤 Nama: ${formData.name}%0A` +
       `📅 Tanggal: ${dateStr}%0A` +

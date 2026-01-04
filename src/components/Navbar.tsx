@@ -30,7 +30,7 @@
        <div className="container mx-auto px-6 flex justify-between items-center">
          <div className="flex items-center gap-2">
            <span className="text-2xl font-serif font-semibold tracking-wider">
-             @bykhaisa
+             @byanisaputri
            </span>
          </div>
          

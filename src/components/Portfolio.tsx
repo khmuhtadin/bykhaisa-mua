@@ -10,34 +10,46 @@ const Portfolio = () => {
 
   const items = [
     {
-      title: "Melayu Bride",
-      img: "https://images.unsplash.com/photo-1692899189376-c9f179f9dc49?q=80&w=800&auto=format&fit=crop",
-      tag: "Wedding"
+      title: "Wedding Look",
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/wedding.webp",
+      tag: "Wedding",
+      alt: "Makeup Wedding Pontianak oleh @byanisaputri - MUA Kalimantan Barat"
     },
     {
-      title: "Sangjit Look",
-      img: "https://images.unsplash.com/photo-1737219239186-6c0900c28d71?q=80&w=800&auto=format&fit=crop",
-      tag: "Engagement"
+      title: "Engagement",
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/engagement.webp",
+      tag: "Engagement",
+      alt: "Makeup Engagement Pontianak - Lamaran & Tunangan"
     },
     {
-      title: "Wisuda Style",
-      img: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop",
-      tag: "Graduation"
-    },
-    {
-      title: "Reception Glam",
-      img: "https://images.unsplash.com/photo-1750931643580-a20f39b79555?q=80&w=800&auto=format&fit=crop",
-      tag: "Wedding"
-    },
-    {
-      title: "Pre-wedding",
-      img: "https://images.unsplash.com/photo-1755904042206-ae518456ef3d?q=80&w=800&auto=format&fit=crop",
-      tag: "Photoshoot"
+      title: "Wisuda",
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/wisuda.webp",
+      tag: "Wisuda",
+      alt: "Makeup Wisuda Pontianak - Graduation Look"
     },
     {
       title: "Bridesmaid",
-      img: "https://images.unsplash.com/photo-1596704017235-d918559d380e?q=80&w=800&auto=format&fit=crop",
-      tag: "Party"
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/bridesmaid.webp",
+      tag: "Bridesmaid",
+      alt: "Makeup Bridesmaid Pontianak - Pengiring Pengantin"
+    },
+    {
+      title: "Yudisium",
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/yudisium.webp",
+      tag: "Yudisium",
+      alt: "Makeup Yudisium Pontianak - Wisudawati Cantik"
+    },
+    {
+      title: "Pengajian",
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/pengajian.webp",
+      tag: "Pengajian",
+      alt: "Makeup Pengajian Pontianak - Acara Keluarga"
+    },
+    {
+      title: "Makeup Ibu-ibu",
+      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/ibu%20ibu.webp",
+      tag: "Ibu-ibu",
+      alt: "Makeup Ibu-ibu Pontianak - MUA untuk Mama"
     },
   ];
 
@@ -110,12 +122,12 @@ const Portfolio = () => {
             <p className="text-creme/80 font-normal">Koleksi tampilan pilihan dari feed Instagram kami</p>
           </div>
           <a
-            href="https://instagram.com/bykhaisa"
+            href="https://instagram.com/byanisaputri"
             target="_blank"
             rel="noreferrer"
             className="hidden md:flex items-center px-6 py-3 bg-creme border border-oak/30 text-clay-dark rounded-full hover:bg-bone transition shadow-sm text-sm font-bold uppercase tracking-wider"
           >
-            <Instagram size={16} className="mr-2" /> @bykhaisa
+            <Instagram size={16} className="mr-2" /> @byanisaputri
           </a>
         </div>
 
@@ -139,7 +151,7 @@ const Portfolio = () => {
               <div className="overflow-hidden aspect-[4/5] bg-creme relative">
                 <img
                   src={item.img}
-                  alt={item.title}
+                  alt={item.alt}
                   className="w-full h-full object-cover pointer-events-none transition duration-700 ease-in-out group-hover:scale-110"
                   loading="lazy"
                   draggable="false"
@@ -157,7 +169,7 @@ const Portfolio = () => {
 
         <div className="mt-8 text-center md:hidden">
           <a
-            href="https://instagram.com/bykhaisa"
+            href="https://instagram.com/byanisaputri"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center text-clay-dark font-bold border-b-2 border-clay-dark pb-1 hover:text-clay hover:border-clay transition"
@@ -173,4 +185,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-

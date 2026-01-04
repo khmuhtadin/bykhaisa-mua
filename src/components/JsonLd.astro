@@ -1,27 +1,155 @@
- ---
- const jsonLd = {
-   "@context": "https://schema.org",
-   "@type": "BeautySalon",
-   "name": "ByKhaisa MUA Pontianak",
-   "image": "https://bykhaisa.com/logo.jpg",
-   "description": "Professional Makeup Artist & Hijab Stylist in Pontianak specializing in Wedding, Sangjit, and Graduation makeup.",
-   "address": {
-     "@type": "PostalAddress",
-     "addressLocality": "Pontianak",
-     "addressRegion": "Kalimantan Barat",
-     "addressCountry": "ID"
-   },
-   "priceRange": "$$",
-   "telephone": "+6287812234804",
-   "openingHoursSpecification": [
-     {
-       "@type": "OpeningHoursSpecification",
-       "dayOfWeek": ["Saturday", "Sunday"],
-       "opens": "04:00",
-       "closes": "20:00"
-     }
-   ]
- };
- ---
- 
- <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+---
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "@id": "https://byanisaputri.my.id/#organization",
+  "name": "ByAnisaPutri MUA Pontianak",
+  "alternateName": ["ByAnisaPutri", "Anisa Putri Makeup Artist", "MUA Pontianak ByAnisaPutri"],
+  "url": "https://byanisaputri.my.id",
+  "logo": "https://byanisaputri.my.id/logo.jpg",
+  "image": [
+    "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/wedding.webp",
+    "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/engagement.webp",
+    "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/wisuda.webp"
+  ],
+  "description": "Professional Makeup Artist & Hijab Stylist di Pontianak. Spesialis Wedding Melayu Modern, Engagement, Wisuda, dan Makeup Keluarga. Melayani area Pontianak & Kubu Raya.",
+  "telephone": "+6287812234804",
+  "email": "byanisaputri@gmail.com",
+  "priceRange": "Rp 300.000 - Rp 5.000.000",
+  "currenciesAccepted": "IDR",
+  "paymentAccepted": "Cash, Bank Transfer",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pontianak",
+    "addressLocality": "Pontianak",
+    "addressRegion": "Kalimantan Barat",
+    "postalCode": "78121",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -0.0263,
+    "longitude": 109.3425
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Pontianak"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kubu Raya"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kalimantan Barat"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Layanan Makeup",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wedding Makeup",
+          "description": "Makeup pengantin untuk Akad & Resepsi. Spesialisasi Melayu Modern & International Look."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Engagement Makeup",
+          "description": "Soft glam makeup untuk acara lamaran yang berkesan."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wisuda Makeup",
+          "description": "Makeup wisuda tahan lama, fresh, dan anti-crack."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bridesmaid Makeup",
+          "description": "Makeup bridesmaid yang serasi dan elegan."
+        }
+      }
+    ]
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "05:00",
+      "closes": "21:00"
+    }
+  ],
+  "sameAs": [
+    "https://instagram.com/byanisaputri",
+    "https://tiktok.com/@byanisaputri",
+    "https://wa.me/6287812234804"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "50",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Berapa harga makeup wedding di Pontianak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harga makeup wedding di ByAnisaPutri mulai dari Rp 1.500.000 untuk paket basic hingga Rp 5.000.000 untuk paket premium dengan retouch dan makeup keluarga."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah ByAnisaPutri melayani home service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, kami melayani home service untuk area Pontianak Kota, Pontianak Barat, Pontianak Selatan, Pontianak Tenggara, Pontianak Utara, Pontianak Timur, dan Kubu Raya (Sungai Raya). Untuk luar kota Kalbar dikenakan transport charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara booking makeup di ByAnisaPutri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Booking sangat mudah! Cukup isi form di website kami atau hubungi langsung via WhatsApp di +6287812234804. Kami akan konfirmasi ketersediaan tanggal dan kirimkan pricelist lengkap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah tersedia makeup untuk wisuda dan yudisium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, kami menyediakan layanan makeup wisuda dan yudisium dengan hasil tahan lama, fresh, dan anti-crack. Cocok untuk foto studio dan acara outdoor."
+      }
+    }
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
