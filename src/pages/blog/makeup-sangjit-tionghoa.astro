@@ -1,0 +1,211 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer.astro';
+import BlogPostSchema from '../../components/BlogPostSchema.astro';
+
+const title = "Makeup Sangjit & Lamaran Tionghoa Pontianak: Panduan Lengkap";
+const description = "Tips makeup untuk acara Sangjit, Tea Ceremony, dan lamaran Tionghoa di Pontianak. Dari pemilihan warna hingga teknik agar tampil elegan seharian.";
+const slug = "makeup-sangjit-tionghoa";
+const category = "Inspirasi & Tips";
+const datePublished = "2026-01-04";
+---
+
+<Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <BlogPostSchema title={title} description={description} slug={slug} category={category} datePublished={datePublished} readingTime="7 menit" />
+  <Navbar client:load />
+  
+  <article class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/blog" class="hover:text-clay">Blog</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Makeup Sangjit</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <span class="text-xs uppercase tracking-widest text-clay font-bold">{category}</span>
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mt-3 mb-4 leading-tight font-medium">
+            {title}
+          </h1>
+          <div class="flex items-center gap-4 text-sm text-clay-dark/60">
+            <time>4 Januari 2026</time>
+            <span>•</span>
+            <span>7 menit baca</span>
+          </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            Pontianak memiliki komunitas <strong>Tionghoa</strong> yang besar dan kaya tradisi. Acara <strong>Sangjit</strong> (过大礼) atau <strong>Tea Ceremony</strong> adalah momen sakral yang membutuhkan riasan sempurna — elegan dengan nuansa oriental, namun tetap terlihat natural dan tidak menor.
+          </p>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Apa itu Sangjit?</strong> Sangjit adalah upacara pertunangan dalam tradisi Tionghoa di mana keluarga pria memberikan hadiah (sembako, perhiasan, kue) kepada keluarga wanita. Biasanya berlangsung pagi hingga siang hari.
+            </p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Karakteristik Makeup Sangjit</h2>
+          <p class="text-clay-dark/80 mb-4">Makeup Sangjit berbeda dari makeup wedding biasa:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Warna dominan merah & gold</strong> — Melambangkan keberuntungan dan kemakmuran</li>
+            <li><strong>Elegan tapi tidak berlebihan</strong> — Ini acara keluarga, bukan panggung</li>
+            <li><strong>Tahan lama</strong> — Acara bisa berlangsung 4-6 jam</li>
+            <li><strong>Fotogenik</strong> — Banyak sesi foto dengan keluarga</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Panduan Warna Berdasarkan Outfit</h2>
+          <p class="text-clay-dark/80 mb-4">Harmonisasi makeup dengan busana sangat penting:</p>
+          
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Cheongsam Merah</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Eyeshadow: Gold, bronze, atau champagne</li>
+                <li>• Lips: Merah klasik atau coral-red</li>
+                <li>• Blush: Peach atau soft coral</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Cheongsam Pink/Peach</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Eyeshadow: Rose gold, pink champagne</li>
+                <li>• Lips: MLBB pink atau dusty rose</li>
+                <li>• Blush: Soft pink atau peach</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Cheongsam Maroon/Burgundy</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Eyeshadow: Brown, burgundy shimmer</li>
+                <li>• Lips: Berry atau wine shade</li>
+                <li>• Blush: Mauve atau dusty pink</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Kua (Gold/Emas)</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Eyeshadow: Warm brown, gold</li>
+                <li>• Lips: Nude warm atau peach</li>
+                <li>• Blush: Warm peach atau coral</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Step-by-Step Makeup Sangjit</h2>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">1. Base Makeup: Flawless & Longlasting</h3>
+          <p class="text-clay-dark/80 mb-4">Untuk acara yang berlangsung lama:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Gunakan primer mattifying untuk mengontrol minyak</li>
+            <li>Foundation long-wear dengan coverage medium-full</li>
+            <li>Concealer untuk menutup area gelap</li>
+            <li>Set dengan bedak tabur (teknik baking untuk tahan lama)</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">2. Alis: Defined tapi Natural</h3>
+          <p class="text-clay-dark/80 mb-6">
+            Bentuk alis yang rapi dan defined sangat penting dalam makeup oriental. Gunakan warna yang sesuai dengan rambut — hindari alis yang terlalu hitam atau terlalu tipis.
+          </p>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">3. Mata: Elegant Oriental Eyes</h3>
+          <p class="text-clay-dark/80 mb-4">Riasan mata khas oriental:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Inner corner highlight</strong> — Gold atau champagne untuk membuka mata</li>
+            <li><strong>Gradient eyeshadow</strong> — Warna terang di kelopak, gelap di outer corner</li>
+            <li><strong>Eyeliner tipis</strong> — Wing subtle, tidak terlalu dramatis</li>
+            <li><strong>Bulu mata natural</strong> — Hindari yang terlalu panjang atau tebal</li>
+          </ul>
+
+          <div class="bg-green-50 border border-green-200 rounded-sm p-6 mb-8">
+            <h4 class="font-bold text-clay-dark mb-3">Tips untuk Mata Sipit:</h4>
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li>Gunakan eyeshadow shimmer di tengah kelopak untuk membuat mata terlihat lebih besar</li>
+              <li>Hindari eyeliner tebal di waterline bawah</li>
+              <li>Curl bulu mata dengan baik sebelum mascara</li>
+              <li>Pertimbangkan eyelash extension natural untuk efek membuka mata</li>
+            </ul>
+          </div>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">4. Blush & Contour: Soft & Feminine</h3>
+          <p class="text-clay-dark/80 mb-4">Untuk tampilan oriental yang feminin:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Blush placement tinggi</strong> — Di tulang pipi, bukan apple of cheeks</li>
+            <li><strong>Contour subtle</strong> — Jangan terlalu harsh, fokus pada hidung dan rahang</li>
+            <li><strong>Highlight natural</strong> — Di puncak tulang pipi dan cupid's bow</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">5. Lips: The Statement</h3>
+          <p class="text-clay-dark/80 mb-4">Bibir adalah focal point dalam makeup Tionghoa:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Merah klasik</strong> — Pilihan safe yang selalu cocok</li>
+            <li><strong>Gradient lips</strong> — Teknik ombre Korea yang populer</li>
+            <li><strong>Glossy finish</strong> — Untuk tampilan lebih youthful</li>
+            <li><strong>Matte finish</strong> — Untuk tampilan lebih sophisticated</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Transition Look: Pagi ke Malam</h2>
+          <p class="text-clay-dark/80 mb-4">Banyak pasangan Tionghoa Pontianak mengadakan Sangjit pagi dan resepsi malam. Tips untuk transisi:</p>
+          
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <h4 class="font-bold text-clay-dark mb-3">Dari Sangjit ke Resepsi:</h4>
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Base tetap sama</strong> — Touch up dengan bedak dan setting spray</li>
+              <li><strong>Tambah drama di mata</strong> — Layer eyeshadow lebih gelap, tambah glitter</li>
+              <li><strong>Ganti warna bibir</strong> — Dari coral ke merah bold</li>
+              <li><strong>Intensify highlight</strong> — Untuk tampilan lebih glamor di lighting malam</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Kesalahan yang Harus Dihindari</h2>
+          <div class="bg-red-50 border border-red-200 rounded-sm p-6 mb-8">
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Makeup terlalu bold</strong> — Sangjit adalah acara keluarga, bukan panggung</li>
+              <li><strong>Foundation terlalu terang</strong> — Pastikan match dengan leher</li>
+              <li><strong>Alis terlalu tebal/hitam</strong> — Terlihat tidak natural di foto</li>
+              <li><strong>Lipstik terlalu glossy</strong> — Gampang transfer saat makan</li>
+              <li><strong>Tidak waterproof</strong> — Sering ada tangisan bahagia!</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Rekomendasi untuk Keluarga</h2>
+          <p class="text-clay-dark/80 mb-4">Ibu dan saudari juga perlu tampil cantik:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Mama calon pengantin</strong> — Makeup elegan, warna nude-rose</li>
+            <li><strong>Adik/kakak</strong> — Makeup natural yang tidak mengalahkan pengantin</li>
+            <li><strong>Koordinasi warna</strong> — Pastikan lipstik keluarga senada tapi tidak identik</li>
+          </ul>
+          
+          <div class="bg-clay text-creme p-8 rounded-sm text-center">
+            <p class="font-serif text-2xl mb-4">Butuh MUA untuk Acara Sangjit?</p>
+            <p class="mb-6 opacity-90">Kami berpengalaman merias untuk acara Tionghoa di Pontianak. Konsultasi gratis!</p>
+            <a 
+              href="https://wa.me/6287812234804?text=Halo%20Ci%20Anisa%2C%20saya%20mau%20konsultasi%20makeup%20sangjit"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+            >
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Author -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <p class="text-sm text-clay-dark/60">
+            Ditulis oleh <strong class="text-clay-dark">ByAnisaPutri</strong> · MUA Pontianak sejak 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>

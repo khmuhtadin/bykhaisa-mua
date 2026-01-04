@@ -1,0 +1,243 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer.astro';
+import BlogPostSchema from '../../components/BlogPostSchema.astro';
+
+const title = "Makeup Pengantin Dayak Modern: Perpaduan Tradisi dan Glamor di Kalimantan Barat";
+const description = "Panduan makeup pengantin Dayak modern di Pontianak. Inspirasi riasan yang memadukan unsur tradisional Dayak dengan teknik makeup kontemporer yang elegan.";
+const slug = "makeup-dayak-modern";
+const category = "Inspirasi Wedding";
+const datePublished = "2026-01-04";
+---
+
+<Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <BlogPostSchema title={title} description={description} slug={slug} category={category} datePublished={datePublished} readingTime="7 menit" />
+  <Navbar client:load />
+  
+  <article class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/blog" class="hover:text-clay">Blog</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Makeup Dayak Modern</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <span class="text-xs uppercase tracking-widest text-clay font-bold">{category}</span>
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mt-3 mb-4 leading-tight font-medium">
+            {title}
+          </h1>
+          <div class="flex items-center gap-4 text-sm text-clay-dark/60">
+            <time>4 Januari 2026</time>
+            <span>•</span>
+            <span>7 menit baca</span>
+          </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            <strong>Kalimantan Barat</strong> adalah rumah bagi berbagai sub-suku Dayak dengan tradisi pernikahan yang kaya dan unik. Makeup pengantin <strong>Dayak modern</strong> kini berkembang menjadi perpaduan indah antara elemen tradisional dan teknik makeup kontemporer — menciptakan tampilan yang menghormati akar budaya sekaligus tetap relevan di era sekarang.
+          </p>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Keragaman Dayak di Kalbar:</strong> Kalimantan Barat memiliki berbagai sub-suku Dayak seperti Dayak Iban, Dayak Kanayatn, Dayak Mualang, Dayak Desa, dan lainnya. Masing-masing memiliki ciri khas busana dan aksesoris pengantin yang berbeda.
+            </p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Karakteristik Makeup Pengantin Dayak Tradisional</h2>
+          <p class="text-clay-dark/80 mb-4">Elemen-elemen khas yang biasanya ada dalam makeup Dayak:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Warna emas dan merah dominan</strong> — Melambangkan keberanian dan kemakmuran</li>
+            <li><strong>Alis yang tegas</strong> — Menggambarkan karakter kuat wanita Dayak</li>
+            <li><strong>Lipstik merah terang</strong> — Kontras dengan aksesori emas</li>
+            <li><strong>Skin finish glowing</strong> — Base makeup yang sehat dan bercahaya</li>
+            <li><strong>Aksen mata dramatis</strong> — Untuk menyeimbangkan headpiece yang megah</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Pendekatan Modern: Menghormati Tradisi dengan Teknik Baru</h2>
+          <p class="text-clay-dark/80 mb-4">Bagaimana memadukan tradisi dan modernitas:</p>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">1. Base Makeup: Flawless tapi Natural</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Gunakan primer yang mengontrol minyak — cuaca Kalbar panas</li>
+            <li>Foundation dengan coverage medium-full, finish satin</li>
+            <li>Hindari base terlalu matte — tampilan Dayak tradisional cenderung dewy</li>
+            <li>Contour subtle untuk menonjolkan struktur wajah</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">2. Mata: Bold tapi Elegan</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Warna utama:</strong> Gold, bronze, copper — selaras dengan aksesori emas</li>
+            <li><strong>Aksen:</strong> Burgundy atau deep red untuk depth</li>
+            <li><strong>Eyeliner:</strong> Wing yang defined, bisa lebih dramatis dari biasa</li>
+            <li><strong>Bulu mata:</strong> Volume dan panjang untuk balance dengan headpiece</li>
+          </ul>
+
+          <div class="bg-green-50 border border-green-200 rounded-sm p-6 mb-8">
+            <h4 class="font-bold text-clay-dark mb-3">Tips Modern untuk Mata Dayak:</h4>
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li>Gunakan glitter atau shimmer di inner corner untuk kesan mewah</li>
+              <li>Cut crease halus untuk dimensi tanpa terlihat terlalu western</li>
+              <li>Pilih bulu mata yang feathery, bukan terlalu tebal/blocky</li>
+              <li>Pastikan makeup mata waterproof — upacara adat bisa berlangsung lama</li>
+            </ul>
+          </div>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">3. Lipstik: Statement Piece</h3>
+          <p class="text-clay-dark/80 mb-4">Bibir adalah focal point dalam makeup Dayak:</p>
+          
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Tradisional</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Merah terang (true red)</li>
+                <li>• Finish glossy atau satin</li>
+                <li>• Full lip coverage</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Modern</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Deep red, burgundy, atau brick</li>
+                <li>• Matte atau velvet finish</li>
+                <li>• Ombre lips untuk kesan softer</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Koordinasi dengan Busana Adat</h2>
+          <p class="text-clay-dark/80 mb-4">Makeup harus harmonis dengan keseluruhan penampilan:</p>
+
+          <div class="space-y-4 mb-8">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Dengan Baju Manik-manik Dominan</h4>
+              <p class="text-sm text-clay-dark/70 mb-0">
+                Jika busana sudah sangat detail dengan manik-manik, makeup bisa sedikit lebih subdued. Fokus pada base flawless dan satu statement point (mata ATAU bibir).
+              </p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Dengan Headpiece/Siger Besar</h4>
+              <p class="text-sm text-clay-dark/70 mb-0">
+                Headpiece megah membutuhkan makeup yang kuat untuk balance. Jangan takut dengan eyeshadow lebih bold dan lipstik yang berani.
+              </p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Dengan Aksesori Emas</h4>
+              <p class="text-sm text-clay-dark/70 mb-0">
+                Pilih eyeshadow dengan undertone warm (gold, copper, bronze) untuk menyatu dengan warna aksesori. Hindari silver atau cool tones.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Durasi Acara: Makeup yang Tahan Lama</h2>
+          <p class="text-clay-dark/80 mb-4">Upacara adat Dayak bisa berlangsung seharian:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Pagi:</strong> Persiapan dan ritual keluarga</li>
+            <li><strong>Siang:</strong> Upacara utama dan foto bersama</li>
+            <li><strong>Sore-Malam:</strong> Resepsi dan hiburan</li>
+          </ul>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <h4 class="font-bold text-clay-dark mb-3">Teknik Makeup Tahan Lama:</h4>
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li>Gunakan eyeshadow primer khusus untuk cuaca panas</li>
+              <li>Set foundation dengan bedak tabur, lalu spray fixative</li>
+              <li>Pilih lip product transfer-proof</li>
+              <li>Siapkan touch-up kit: bedak, lipstik, dan blotting paper</li>
+              <li>Jika outdoor, tambahkan setting spray dengan SPF</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Inspirasi Look Dayak Modern</h2>
+          
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Glam Traditional</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Full glam eye dengan gold shimmer</li>
+                <li>• Lipstik merah klasik</li>
+                <li>• Blush coral-peach</li>
+                <li>• Highlight kuat di cheekbone</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Soft Modern</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Eye natural dengan aksen bronze</li>
+                <li>• Lipstik nude-rose atau terracotta</li>
+                <li>• Blush natural pink</li>
+                <li>• Highlight subtle, dewy skin</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Bold Contemporary</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Smoky eye dengan burgundy</li>
+                <li>• Lipstik deep berry atau wine</li>
+                <li>• Contour yang defined</li>
+                <li>• Graphic liner (opsional)</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Ethereal Dayak</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Glowing skin seperti lit from within</li>
+                <li>• Eye soft dengan shimmer champagne</li>
+                <li>• Lips MLBB atau peachy nude</li>
+                <li>• Fokus pada kesehatan kulit</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Yang Perlu Diperhatikan</h2>
+          
+          <div class="bg-red-50 border border-red-200 rounded-sm p-6 mb-8">
+            <h4 class="font-bold text-clay-dark mb-3">Hindari:</h4>
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Makeup terlalu western</strong> — Ini upacara adat, hormati tradisi</li>
+              <li><strong>Warna yang tidak cocok</strong> — Hindari cool tones yang clash dengan emas</li>
+              <li><strong>Base terlalu matte</strong> — Kulit Dayak tradisional tampak sehat dan bercahaya</li>
+              <li><strong>Mengabaikan durasi</strong> — Acara lama butuh produk long-wear</li>
+              <li><strong>Tidak koordinasi dengan busana</strong> — Selalu lihat keseluruhan look</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Konsultasi dengan Tetua Adat</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Setiap sub-suku Dayak mungkin memiliki aturan berbeda tentang penampilan pengantin. Sebelum menentukan makeup look, ada baiknya konsultasi dengan tetua adat atau keluarga yang memahami tradisi. Ini memastikan makeup yang dipilih tetap sesuai dengan nilai-nilai budaya yang dijunjung.
+          </p>
+          
+          <div class="bg-clay text-creme p-8 rounded-sm text-center">
+            <p class="font-serif text-2xl mb-4">Butuh MUA untuk Wedding Adat Dayak?</p>
+            <p class="mb-6 opacity-90">Kami siap membantu menciptakan makeup pengantin Dayak yang memadukan tradisi dan modernitas. Konsultasi gratis!</p>
+            <a 
+              href="https://wa.me/6287812234804?text=Halo%20Kak%20Anisa%2C%20saya%20mau%20konsultasi%20makeup%20pengantin%20adat%20Dayak"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+            >
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Author -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <p class="text-sm text-clay-dark/60">
+            Ditulis oleh <strong class="text-clay-dark">ByAnisaPutri</strong> · MUA Pontianak sejak 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>

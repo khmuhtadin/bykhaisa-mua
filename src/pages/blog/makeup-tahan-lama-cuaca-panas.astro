@@ -1,0 +1,209 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer.astro';
+import BlogPostSchema from '../../components/BlogPostSchema.astro';
+
+const title = "Rahasia Makeup Tahan 12 Jam di Cuaca Panas Pontianak";
+const description = "Tips dan teknik makeup anti-luntur untuk cuaca ekstrem Kota Khatulistiwa. Panduan lengkap dari MUA profesional agar riasan tetap flawless seharian.";
+const slug = "makeup-tahan-lama-cuaca-panas";
+const category = "Tips & Teknik";
+const datePublished = "2026-01-04";
+---
+
+<Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <BlogPostSchema title={title} description={description} slug={slug} category={category} datePublished={datePublished} readingTime="8 menit" />
+  <Navbar client:load />
+  
+  <article class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/blog" class="hover:text-clay">Blog</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Makeup Tahan Lama</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <span class="text-xs uppercase tracking-widest text-clay font-bold">{category}</span>
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mt-3 mb-4 leading-tight font-medium">
+            {title}
+          </h1>
+          <div class="flex items-center gap-4 text-sm text-clay-dark/60">
+            <time>4 Januari 2026</time>
+            <span>•</span>
+            <span>8 menit baca</span>
+          </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            Pontianak adalah <strong>Kota Khatulistiwa</strong> dengan suhu rata-rata 30-34°C dan kelembapan mencapai 85%. Tantangan terbesar bagi pengantin dan MUA di sini? <em>Makeup yang mudah luntur, cracking, dan "meleleh"</em> dalam hitungan jam. Artikel ini akan membongkar rahasia agar riasan tetap <strong>flawless 12 jam</strong> meski di bawah terik matahari Pontianak.
+          </p>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Fakta:</strong> Berdasarkan pengalaman kami merias ratusan klien di Pontianak, 90% keluhan adalah makeup yang "geser" atau luntur sebelum acara selesai. Dengan teknik yang tepat, masalah ini bisa diatasi!
+            </p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Mengapa Makeup Mudah Luntur di Pontianak?</h2>
+          <p class="text-clay-dark/80 mb-4">Sebelum membahas solusi, pahami dulu musuhnya:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Suhu tinggi (30-34°C)</strong> — Melelehkan produk berbasis wax dan oil</li>
+            <li><strong>Kelembapan ekstrem (85%+)</strong> — Keringat bercampur dengan makeup</li>
+            <li><strong>Produksi sebum berlebih</strong> — Kulit berminyak makin parah di cuaca panas</li>
+            <li><strong>AC indoor vs outdoor</strong> — Perubahan suhu drastis bikin makeup crack</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">1. Skin Prep adalah Fondasi Utama</h2>
+          <p class="text-clay-dark/80 mb-4">Makeup yang tahan lama dimulai dari persiapan kulit yang benar:</p>
+          
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Double Cleansing</h4>
+              <p class="text-sm text-clay-dark/70">Bersihkan wajah dengan oil cleanser + foam cleanser untuk mengangkat semua minyak dan kotoran</p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Toner + Ice Cube</h4>
+              <p class="text-sm text-clay-dark/70">Aplikasikan toner, lalu usap wajah dengan es batu untuk mengecilkan pori</p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Moisturizer Ringan</h4>
+              <p class="text-sm text-clay-dark/70">Pilih gel-based atau water-based, hindari yang terlalu creamy</p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Sunscreen Matte</h4>
+              <p class="text-sm text-clay-dark/70">SPF 50 dengan finish matte, bukan dewy yang bikin makin berminyak</p>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">2. Primer: Investasi Terpenting</h2>
+          <p class="text-clay-dark/80 mb-4">Primer adalah "lem" yang menahan makeup. Untuk cuaca Pontianak, pilih:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Mattifying primer</strong> — Mengontrol minyak di T-zone (dahi, hidung, dagu)</li>
+            <li><strong>Pore-filling primer</strong> — Mengisi pori besar agar foundation rata</li>
+            <li><strong>Waterproof primer</strong> — Untuk acara outdoor atau yang gampang berkeringat</li>
+          </ul>
+          <p class="text-clay-dark/80 mb-8">
+            <em>Pro tip:</em> Aplikasikan primer, tunggu 2-3 menit hingga "set" sebelum lanjut ke foundation.
+          </p>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">3. Foundation Long-Wear + Teknik Layering</h2>
+          <p class="text-clay-dark/80 mb-4">Pilih foundation dengan klaim berikut:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Long-wear / 24-hour</strong></li>
+            <li><strong>Waterproof / Sweat-proof</strong></li>
+            <li><strong>Transfer-resistant</strong></li>
+            <li><strong>Oil-free / Matte finish</strong></li>
+          </ul>
+          
+          <div class="bg-green-50 border border-green-200 rounded-sm p-6 mb-8">
+            <h4 class="font-bold text-clay-dark mb-3">Teknik Layering yang Benar:</h4>
+            <ol class="list-decimal pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li>Aplikasikan foundation tipis dengan <em>damp beauty blender</em></li>
+              <li>Tunggu 1 menit, set dengan bedak tabur tipis</li>
+              <li>Tambahkan layer kedua hanya di area yang perlu coverage lebih</li>
+              <li>Set lagi dengan bedak</li>
+            </ol>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">4. Teknik Baking untuk Area Berminyak</h2>
+          <p class="text-clay-dark/80 mb-4"><strong>Baking</strong> adalah teknik mengunci makeup dengan bedak tabur tebal selama beberapa menit:</p>
+          <ol class="list-decimal pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Setelah concealer, tumpuk bedak tabur tebal di bawah mata, dahi, dan dagu</li>
+            <li>Diamkan 5-10 menit (biarkan panas tubuh "memanggang" bedak)</li>
+            <li>Sapukan sisa bedak dengan brush besar</li>
+          </ol>
+          <p class="text-clay-dark/80 mb-8">Teknik ini sangat efektif untuk cuaca Pontianak karena menciptakan barrier antara kulit dan makeup.</p>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">5. Produk Waterproof untuk Mata & Bibir</h2>
+          <p class="text-clay-dark/80 mb-4">Area mata dan bibir paling rentan luntur:</p>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Mata:</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Eyeshadow primer</strong> — Wajib! Mencegah eyeshadow creasing</li>
+            <li><strong>Waterproof eyeliner</strong> — Pilih yang gel atau felt-tip</li>
+            <li><strong>Waterproof mascara</strong> — Tubing mascara lebih tahan dari fiber</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Bibir:</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Lip liner sebagai base</strong> — Isi seluruh bibir dengan lip liner</li>
+            <li><strong>Matte liquid lipstick</strong> — Lebih tahan dari cream/satin</li>
+            <li><strong>Lip tint</strong> — Untuk warna yang "menempel" ke bibir</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">6. Setting Spray: The Final Boss</h2>
+          <p class="text-clay-dark/80 mb-4">Setting spray adalah langkah terakhir yang <strong>TIDAK BOLEH</strong> dilewatkan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Pilih yang <strong>long-wear</strong> atau <strong>all-day</strong></li>
+            <li>Semprotkan dari jarak 20-30 cm</li>
+            <li>Gerakan "X" dan "T" untuk coverage merata</li>
+            <li>Untuk extra hold, semprotkan 2-3 kali dengan jeda 1 menit</li>
+          </ul>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <h4 class="font-bold text-clay-dark mb-3">Hack untuk Cuaca Ekstrem:</h4>
+            <p class="text-clay-dark/80 text-sm mb-0">
+              Semprotkan setting spray SEBELUM dan SESUDAH makeup. Spray pertama menciptakan "canvas" yang lebih grippy untuk foundation, spray terakhir mengunci semuanya.
+            </p>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">7. Touch-Up Kit Wajib</h2>
+          <p class="text-clay-dark/80 mb-4">Meski sudah menggunakan semua teknik di atas, siapkan touch-up kit:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Blotting paper</strong> — Menyerap minyak tanpa merusak makeup</li>
+            <li><strong>Compact powder</strong> — Untuk touch-up ringan di T-zone</li>
+            <li><strong>Lipstick/lip tint</strong> — Untuk refresh setelah makan</li>
+            <li><strong>Mini setting spray</strong> — Untuk "reactivate" makeup yang mulai pudar</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Kesimpulan: Formula Anti-Luntur Pontianak</h2>
+          <div class="bg-oak/10 rounded-sm p-6 mb-8">
+            <ol class="list-decimal pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li>Skin prep dengan produk ringan + sunscreen matte</li>
+              <li>Primer mattifying, tunggu 2-3 menit</li>
+              <li>Foundation long-wear dengan teknik layering tipis</li>
+              <li>Baking di area berminyak (5-10 menit)</li>
+              <li>Produk waterproof untuk mata & bibir</li>
+              <li>Setting spray 2-3x sebelum & sesudah makeup</li>
+              <li>Touch-up kit untuk jaga-jaga</li>
+            </ol>
+          </div>
+          
+          <p class="text-clay-dark/80 mb-6">
+            Dengan teknik ini, kami sudah berhasil membuat ratusan pengantin dan klien di Pontianak tampil <strong>flawless dari subuh sampai malam</strong> — meski acara outdoor di terik matahari!
+          </p>
+          
+          <div class="bg-clay text-creme p-8 rounded-sm text-center">
+            <p class="font-serif text-2xl mb-4">Mau Makeup Anti-Luntur untuk Acaramu?</p>
+            <p class="mb-6 opacity-90">Konsultasi gratis dengan MUA profesional yang paham cuaca Pontianak.</p>
+            <a 
+              href="https://wa.me/6287812234804?text=Halo%20Ci%20Anisa%2C%20saya%20mau%20konsultasi%20makeup%20tahan%20lama"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+            >
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Author -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <p class="text-sm text-clay-dark/60">
+            Ditulis oleh <strong class="text-clay-dark">ByAnisaPutri</strong> · MUA Pontianak sejak 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>

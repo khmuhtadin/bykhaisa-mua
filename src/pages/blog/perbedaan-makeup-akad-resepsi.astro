@@ -1,0 +1,286 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer.astro';
+import BlogPostSchema from '../../components/BlogPostSchema.astro';
+
+const title = "Perbedaan Makeup Akad vs Resepsi: Kapan Natural, Kapan Glam?";
+const description = "Panduan lengkap perbedaan makeup akad nikah dan resepsi untuk pengantin Pontianak. Tips teknik, warna, dan intensitas riasan yang tepat untuk setiap momen.";
+const slug = "perbedaan-makeup-akad-resepsi";
+const category = "Tips Wedding";
+const datePublished = "2026-01-04";
+---
+
+<Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <BlogPostSchema title={title} description={description} slug={slug} category={category} datePublished={datePublished} readingTime="6 menit" />
+  <Navbar client:load />
+  
+  <article class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/blog" class="hover:text-clay">Blog</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Makeup Akad vs Resepsi</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <span class="text-xs uppercase tracking-widest text-clay font-bold">{category}</span>
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mt-3 mb-4 leading-tight font-medium">
+            {title}
+          </h1>
+          <div class="flex items-center gap-4 text-sm text-clay-dark/60">
+            <time>4 Januari 2026</time>
+            <span>•</span>
+            <span>6 menit baca</span>
+          </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            Banyak pengantin bingung: <em>"Apakah makeup akad dan resepsi harus sama?"</em> Jawabannya: <strong>tidak harus!</strong> Kedua momen ini memiliki karakter berbeda, dan makeup yang tepat akan membuat keduanya menjadi foto-foto yang memorable dengan cara masing-masing.
+          </p>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Quick Summary:</strong> Akad = sakral, intimate, soft & elegant. Resepsi = celebratory, banyak tamu, lebih bold & photogenic. Keduanya beautiful dengan cara berbeda!
+            </p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Karakteristik Momen Akad Nikah</h2>
+          <p class="text-clay-dark/80 mb-4">Akad adalah momen sakral dengan karakteristik:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Intimate setting</strong> — Biasanya keluarga dekat dan saksi</li>
+            <li><strong>Momen emosional</strong> — Air mata bahagia sering terjadi</li>
+            <li><strong>Durasi singkat</strong> — 30 menit hingga 1 jam</li>
+            <li><strong>Foto close-up</strong> — Banyak foto wajah dari dekat</li>
+            <li><strong>Lighting natural</strong> — Seringkali di pagi/siang hari</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Karakteristik Momen Resepsi</h2>
+          <p class="text-clay-dark/80 mb-4">Resepsi adalah pesta perayaan dengan karakteristik:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Banyak tamu</strong> — Ratusan hingga ribuan undangan</li>
+            <li><strong>Durasi panjang</strong> — 4-6 jam, kadang lebih</li>
+            <li><strong>Lighting artificial</strong> — Lampu gedung/ballroom</li>
+            <li><strong>Foto dari berbagai jarak</strong> — Pelaminan, meja tamu, outdoor</li>
+            <li><strong>Entertainment focus</strong> — Musik, games, sesi foto</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Perbandingan Makeup Akad vs Resepsi</h2>
+          
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-clay text-creme">
+                  <th class="p-3 text-left">Aspek</th>
+                  <th class="p-3 text-left">Makeup Akad</th>
+                  <th class="p-3 text-left">Makeup Resepsi</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr class="border-b border-bone">
+                  <td class="p-3 font-bold text-clay-dark">Base</td>
+                  <td class="p-3 text-clay-dark/70">Light-medium coverage, natural finish</td>
+                  <td class="p-3 text-clay-dark/70">Medium-full coverage, satin/dewy finish</td>
+                </tr>
+                <tr class="border-b border-bone">
+                  <td class="p-3 font-bold text-clay-dark">Mata</td>
+                  <td class="p-3 text-clay-dark/70">Soft shimmer, neutral tones</td>
+                  <td class="p-3 text-clay-dark/70">More dimension, shimmer/glitter, defined</td>
+                </tr>
+                <tr class="border-b border-bone">
+                  <td class="p-3 font-bold text-clay-dark">Alis</td>
+                  <td class="p-3 text-clay-dark/70">Natural, groomed</td>
+                  <td class="p-3 text-clay-dark/70">More defined, bisa lebih bold</td>
+                </tr>
+                <tr class="border-b border-bone">
+                  <td class="p-3 font-bold text-clay-dark">Bulu Mata</td>
+                  <td class="p-3 text-clay-dark/70">Natural atau wispy</td>
+                  <td class="p-3 text-clay-dark/70">More volume, dramatic OK</td>
+                </tr>
+                <tr class="border-b border-bone">
+                  <td class="p-3 font-bold text-clay-dark">Contour</td>
+                  <td class="p-3 text-clay-dark/70">Subtle, soft sculpting</td>
+                  <td class="p-3 text-clay-dark/70">More defined untuk foto jarak jauh</td>
+                </tr>
+                <tr class="border-b border-bone">
+                  <td class="p-3 font-bold text-clay-dark">Highlight</td>
+                  <td class="p-3 text-clay-dark/70">Natural glow</td>
+                  <td class="p-3 text-clay-dark/70">More intense, bisa shimmer</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-clay-dark">Lipstik</td>
+                  <td class="p-3 text-clay-dark/70">MLBB, nude rose, soft coral</td>
+                  <td class="p-3 text-clay-dark/70">Bold red, berry, statement color</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Detail Makeup Akad: Soft & Elegant</h2>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Base Makeup</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Foundation dengan coverage yang bisa di-build, mulai dari light</li>
+            <li>Concealer hanya di area yang perlu (undereye, blemish)</li>
+            <li>Setting powder tipis, fokus di T-zone</li>
+            <li>Finish: Skin-like, glowing dari dalam</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Mata</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Eyeshadow: Champagne, soft brown, nude pink</li>
+            <li>Eyeliner: Thin line atau skip altogether</li>
+            <li>Mascara: Lengthening, natural curl</li>
+            <li>Bulu mata palsu: Wispy, individual, atau skip</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Wajah</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Blush: Soft pink, peach, atau dusty rose</li>
+            <li>Contour: Sangat subtle, lebih ke natural shadowing</li>
+            <li>Highlight: Cream highlighter untuk natural glow</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Bibir</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Warna: MLBB (my lips but better), nude rose, soft coral</li>
+            <li>Finish: Satin atau creamy matte</li>
+            <li>Pastikan waterproof untuk antisipasi air mata</li>
+          </ul>
+
+          <div class="bg-green-50 border border-green-200 rounded-sm p-6 mb-8">
+            <h4 class="font-bold text-clay-dark mb-3">Kenapa Soft untuk Akad?</h4>
+            <p class="text-clay-dark/80 mb-0">
+              Foto akad seringkali close-up dan dalam natural light. Makeup yang terlalu heavy akan terlihat berlebihan di foto. Plus, momen ijab kabul adalah tentang kesucian dan ketulusan — makeup soft mencerminkan itu.
+            </p>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Detail Makeup Resepsi: Glam & Photogenic</h2>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Base Makeup</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Foundation full coverage untuk foto dari jarak jauh</li>
+            <li>Concealer yang benar-benar cover semua imperfection</li>
+            <li>Setting dengan teknik baking untuk ketahanan</li>
+            <li>Finish: Satin atau dewy yang tidak oily</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Mata</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Eyeshadow: Lebih dimension — shimmer, glitter, defined crease</li>
+            <li>Eyeliner: Wing yang visible dari jarak jauh</li>
+            <li>Bulu mata: Volume tinggi, bisa double-stack</li>
+            <li>Warna: Bisa lebih bold — gold, bronze, burgundy</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Wajah</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Contour: Lebih defined untuk struktur wajah yang terlihat di foto</li>
+            <li>Blush: Lebih pigmented, placement lebih strategic</li>
+            <li>Highlight: Powder highlighter untuk glow yang terlihat di lighting artificial</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Bibir</h3>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Warna: Bold red, berry, wine, atau sesuai tema</li>
+            <li>Finish: Matte untuk longevity (banyak makan/minum)</li>
+            <li>Lip liner penting untuk definisi</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Skenario: Akad dan Resepsi Satu Hari</h2>
+          <p class="text-clay-dark/80 mb-4">Banyak pengantin Pontianak yang mengadakan akad dan resepsi di hari yang sama. Ada dua opsi:</p>
+
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Opsi 1: Touch-up/Upgrade</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Mulai dengan makeup akad (soft)</li>
+                <li>• Touch-up 30-60 menit sebelum resepsi</li>
+                <li>• Tambah: eyeshadow, bulu mata, lipstik bold</li>
+                <li>• Hemat waktu dan biaya</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Opsi 2: Full Repaint</h4>
+              <ul class="text-sm text-clay-dark/70 space-y-1">
+                <li>• Makeup akad selesai → hapus semua</li>
+                <li>• Makeup resepsi dari awal</li>
+                <li>• Hasil paling optimal untuk kedua look</li>
+                <li>• Butuh waktu lebih lama (1-1.5 jam)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <h4 class="font-bold text-clay-dark mb-3">Rekomendasi Kami:</h4>
+            <p class="text-clay-dark/80 mb-0">
+              Jika jeda antara akad dan resepsi <strong>kurang dari 3 jam</strong>, pilih opsi 1 (touch-up). Jika jeda <strong>lebih dari 3 jam</strong> atau kamu menginginkan look yang sangat berbeda, pilih opsi 2 (repaint). Diskusikan dengan MUA saat trial makeup!
+            </p>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">FAQ Makeup Akad vs Resepsi</h2>
+          
+          <div class="space-y-6 mb-8">
+            <div class="bg-white rounded-sm p-6 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Apakah harus beda MUA untuk akad dan resepsi?</h4>
+              <p class="text-clay-dark/80 mb-0">
+                Tidak harus. MUA yang sama justru lebih baik karena sudah mengenal wajahmu dan bisa menjaga konsistensi. Yang penting, diskusikan kedua look saat trial.
+              </p>
+            </div>
+            <div class="bg-white rounded-sm p-6 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Berapa lama waktu yang dibutuhkan untuk touch-up?</h4>
+              <p class="text-clay-dark/80 mb-0">
+                Touch-up biasanya 30-45 menit. Repaint butuh 60-90 menit. Perhitungkan ini dalam rundown acara.
+              </p>
+            </div>
+            <div class="bg-white rounded-sm p-6 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Bagaimana jika saya ingin makeup sama untuk keduanya?</h4>
+              <p class="text-clay-dark/80 mb-0">
+                Bisa! Pilih look "middle ground" — tidak terlalu soft, tidak terlalu bold. Tapi perlu diingat, makeup yang terlihat bagus di natural light mungkin terlihat flat di ballroom, dan sebaliknya.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-red-50 border border-red-200 rounded-sm p-6 mb-8">
+            <h4 class="font-bold text-clay-dark mb-3">Hindari:</h4>
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Makeup akad terlalu bold</strong> — Akan terlihat berlebihan di foto intimate</li>
+              <li><strong>Makeup resepsi terlalu soft</strong> — Tidak akan terlihat dari jarak jauh</li>
+              <li><strong>Tidak test di lighting venue</strong> — Hasil bisa mengecewakan</li>
+              <li><strong>Skip trial untuk look kedua</strong> — Kejutan buruk di hari H</li>
+            </ul>
+          </div>
+          
+          <div class="bg-clay text-creme p-8 rounded-sm text-center">
+            <p class="font-serif text-2xl mb-4">Bingung Pilih Look untuk Akad & Resepsi?</p>
+            <p class="mb-6 opacity-90">Konsultasi gratis untuk membahas kedua look yang cocok untuk momen sakral dan pestamu!</p>
+            <a 
+              href="https://wa.me/6287812234804?text=Halo%20Kak%20Anisa%2C%20saya%20mau%20konsultasi%20makeup%20akad%20dan%20resepsi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+            >
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Author -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <p class="text-sm text-clay-dark/60">
+            Ditulis oleh <strong class="text-clay-dark">ByAnisaPutri</strong> · MUA Pontianak sejak 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>
