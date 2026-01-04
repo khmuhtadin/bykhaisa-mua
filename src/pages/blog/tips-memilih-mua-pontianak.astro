@@ -1,0 +1,176 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer.astro';
+
+const title = "7 Tips Memilih MUA Pontianak yang Tepat untuk Hari Spesialmu";
+const description = "Panduan lengkap cara memilih makeup artist (MUA) di Pontianak. Dari cek portofolio hingga trial makeup, hindari kesalahan fatal saat pilih MUA untuk wedding atau wisuda.";
+---
+
+<Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <Navbar client:load />
+  
+  <article class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/blog" class="hover:text-clay">Blog</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Tips Memilih MUA</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <span class="text-xs uppercase tracking-widest text-clay font-bold">Tips & Panduan</span>
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mt-3 mb-4 leading-tight font-medium">
+            {title}
+          </h1>
+          <div class="flex items-center gap-4 text-sm text-clay-dark/60">
+            <time>4 Januari 2026</time>
+            <span>•</span>
+            <span>7 menit baca</span>
+          </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            Memilih <strong>makeup artist (MUA) di Pontianak</strong> yang tepat adalah salah satu keputusan penting untuk hari spesialmu. Baik untuk wedding, wisuda, atau engagement, artikel ini akan membantumu menghindari kesalahan fatal dan menemukan MUA yang sesuai.
+          </p>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Fun Fact:</strong> 54% pengguna jasa kecantikan di Indonesia lebih percaya review dari klien asli dibanding endorsement influencer. Pastikan kamu cek testimoni real!
+            </p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">1. Cek Portofolio di Media Sosial</h2>
+          <p class="text-clay-dark/80 mb-4">Langkah pertama adalah melihat hasil kerja MUA di Instagram atau website mereka. Perhatikan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Konsistensi hasil</strong> — Apakah semua foto terlihat profesional?</li>
+            <li><strong>Variasi klien</strong> — Apakah mereka bisa handle berbagai tone kulit?</li>
+            <li><strong>Update terbaru</strong> — MUA yang aktif biasanya update minimal 1x seminggu</li>
+            <li><strong>Hasil pada kulit bermasalah</strong> — Lihat bagaimana mereka cover flek, jerawat, atau bekas luka</li>
+          </ul>
+          <p class="text-clay-dark/80 mb-8">
+            <em>Tips:</em> Hindari MUA yang sudah 3+ bulan tidak update portofolio — bisa jadi mereka sudah tidak aktif.
+          </p>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">2. Baca Review dan Testimoni Klien</h2>
+          <p class="text-clay-dark/80 mb-4">Jangan hanya percaya foto "before-after". Cari tahu pengalaman klien sebelumnya:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Cek review di Google Maps (jika MUA punya studio)</li>
+            <li>Baca komen di postingan Instagram</li>
+            <li>Tanya langsung ke teman atau keluarga yang pernah pakai jasanya</li>
+            <li>Perhatikan bagaimana MUA merespon komplain (jika ada)</li>
+          </ul>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">3. Pastikan Gaya Makeup Sesuai Keinginanmu</h2>
+          <p class="text-clay-dark/80 mb-4">Setiap MUA punya "signature style" yang berbeda:</p>
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Natural / Soft Glam</h4>
+              <p class="text-sm text-clay-dark/70">Cocok untuk akad nikah, wisuda, atau kamu yang suka tampilan "no-makeup makeup"</p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Bold / Glamour</h4>
+              <p class="text-sm text-clay-dark/70">Cocok untuk resepsi malam, pesta besar, atau yang ingin tampil mencolok</p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Melayu Modern</h4>
+              <p class="text-sm text-clay-dark/70">Perpaduan adat Melayu dengan teknik modern — populer di Pontianak</p>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Korean / Glass Skin</h4>
+              <p class="text-sm text-clay-dark/70">Tampilan dewy, glowing, dan youthful — tren yang terus naik</p>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">4. Tanyakan Produk yang Digunakan</h2>
+          <p class="text-clay-dark/80 mb-4">MUA profesional akan transparan tentang produk yang mereka pakai. Tanyakan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Apakah produk high-end atau drugstore?</li>
+            <li>Apakah aman untuk kulit sensitif?</li>
+            <li>Apakah waterproof dan tahan lama? (Penting untuk cuaca Pontianak yang panas!)</li>
+          </ul>
+          <p class="text-clay-dark/80 mb-8">
+            <strong>Khusus Pontianak:</strong> Karena suhu bisa mencapai 34°C+, pastikan MUA menggunakan produk long-wear dan setting spray yang kuat.
+          </p>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">5. Lakukan Trial Makeup</h2>
+          <p class="text-clay-dark/80 mb-4">Untuk acara besar seperti wedding, <strong>trial makeup wajib dilakukan</strong>. Manfaatnya:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Kamu bisa lihat hasil riasan secara langsung</li>
+            <li>Bisa diskusi dan revisi sebelum hari H</li>
+            <li>Menguji ketahanan makeup di kulit kamu</li>
+            <li>Membangun chemistry dengan MUA</li>
+          </ul>
+          <p class="text-clay-dark/80 mb-8">
+            <em>Tips:</em> Lakukan trial 2-4 minggu sebelum hari H, bukan terlalu dekat agar ada waktu untuk perbaikan.
+          </p>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">6. Booking Jauh-Jauh Hari</h2>
+          <p class="text-clay-dark/80 mb-4">MUA favorit biasanya fully booked, terutama di:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Musim wisuda</strong> — Mei dan Juli (UNTAN, IAIN Pontianak)</li>
+            <li><strong>Pasca Lebaran</strong> — April-Mei (musim wedding)</li>
+            <li><strong>Weekend</strong> — Sabtu dan Minggu selalu padat</li>
+          </ul>
+          <p class="text-clay-dark/80 mb-8">
+            Idealnya, booking 2-3 bulan sebelum acara untuk wedding, dan 1 bulan untuk wisuda.
+          </p>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">7. Perhatikan Profesionalisme</h2>
+          <p class="text-clay-dark/80 mb-4">MUA yang profesional akan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Merespon chat dengan cepat dan ramah</li>
+            <li>Memberikan pricelist yang jelas dan transparan</li>
+            <li>Tepat waktu saat trial maupun hari H</li>
+            <li>Memiliki kontrak atau kesepakatan tertulis</li>
+            <li>Bersedia mendengarkan keinginanmu</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Kesalahan Fatal yang Harus Dihindari</h2>
+          <div class="bg-red-50 border border-red-200 rounded-sm p-6 mb-8">
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Memilih hanya berdasarkan harga murah</strong> — Kualitas biasanya sebanding dengan harga</li>
+              <li><strong>Tidak melakukan trial</strong> — Hasil foto bisa berbeda dengan aslinya</li>
+              <li><strong>Booking mendadak</strong> — MUA bagus biasanya sudah fully booked</li>
+              <li><strong>Tidak komunikasikan ekspektasi</strong> — Bawa referensi foto agar MUA paham keinginanmu</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Rekomendasi MUA Pontianak</h2>
+          <p class="text-clay-dark/80 mb-6">
+            <strong>ByAnisaPutri</strong> adalah MUA profesional di Pontianak dengan 5+ tahun pengalaman dan 500+ klien bahagia. Spesialisasi dalam Wedding Melayu Modern, Engagement, dan Wisuda dengan hasil natural glam yang tahan lama.
+          </p>
+          
+          <div class="bg-clay text-creme p-8 rounded-sm text-center">
+            <p class="font-serif text-2xl mb-4">Mau konsultasi gratis?</p>
+            <p class="mb-6 opacity-90">Hubungi kami via WhatsApp untuk diskusi look yang kamu inginkan.</p>
+            <a 
+              href="https://wa.me/6287812234804?text=Halo%20Ci%20Anisa%2C%20saya%20mau%20konsultasi%20makeup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+            >
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Author -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <p class="text-sm text-clay-dark/60">
+            Ditulis oleh <strong class="text-clay-dark">ByAnisaPutri</strong> · MUA Pontianak sejak 2020
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>
