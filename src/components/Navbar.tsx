@@ -13,11 +13,11 @@
      return () => window.removeEventListener('scroll', handleScroll);
    }, []);
  
-   const navLinks = [
-     { name: 'Services', href: '#services' },
-     { name: 'Portfolio', href: '#portfolio' },
-     { name: 'Booking', href: '#booking' },
-   ];
+  const navLinks = [
+    { name: 'Services', href: '/#services' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Booking', href: '/#booking' },
+  ];
  
    return (
      <nav 
@@ -28,11 +28,11 @@
        }`}
      >
        <div className="container mx-auto px-6 flex justify-between items-center">
-         <div className="flex items-center gap-2">
-           <span className="text-2xl font-serif font-semibold tracking-wider">
-             @byanisaputri
-           </span>
-         </div>
+        <div className="flex items-center gap-2">
+          <a href="/" className="text-2xl font-serif font-semibold tracking-wider hover:text-clay transition-colors">
+            @byanisaputri
+          </a>
+        </div>
          
          {/* Desktop Menu */}
          <div className="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-[0.2em]">

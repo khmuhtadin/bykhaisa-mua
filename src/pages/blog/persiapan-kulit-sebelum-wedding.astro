@@ -1,0 +1,220 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer.astro';
+
+const title = "Persiapan Kulit Sebelum Wedding: Panduan Skincare 3 Bulan untuk Pengantin Pontianak";
+const description = "Panduan lengkap persiapan kulit pengantin 3 bulan sebelum wedding. Tips skincare, treatment, dan nutrisi untuk kulit glowing di hari pernikahan.";
+---
+
+<Layout title={`${title} | ByAnisaPutri`} description={description}>
+  <Navbar client:load />
+  
+  <article class="pt-32 pb-24 bg-creme min-h-screen">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-clay-dark/60 mb-8">
+          <a href="/" class="hover:text-clay">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/blog" class="hover:text-clay">Blog</a>
+          <span class="mx-2">›</span>
+          <span class="text-clay-dark">Persiapan Kulit Sebelum Wedding</span>
+        </nav>
+        
+        <!-- Header -->
+        <header class="mb-12">
+          <span class="text-xs uppercase tracking-widest text-clay font-bold">Bridal Skincare</span>
+          <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-clay-dark mt-3 mb-4 leading-tight font-medium">
+            {title}
+          </h1>
+          <div class="flex items-center gap-4 text-sm text-clay-dark/60">
+            <time>4 Januari 2026</time>
+            <span>•</span>
+            <span>10 menit baca</span>
+          </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-clay-dark/80 leading-relaxed mb-8">
+            Makeup yang sempurna dimulai dari <strong>kulit yang sehat</strong>. Sebagai calon pengantin, persiapan kulit idealnya dimulai 3 bulan sebelum hari H. Artikel ini akan memandu kamu langkah demi langkah untuk mendapatkan kulit glowing di hari pernikahan.
+          </p>
+
+          <div class="bg-white rounded-sm p-6 mb-8 border border-bone">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Khusus Pontianak:</strong> Dengan cuaca panas dan lembap (humidity 80%+), kulit di Kalimantan Barat cenderung berminyak dan rentan breakout. Panduan ini sudah disesuaikan untuk iklim tropis.
+            </p>
+          </div>
+          
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Timeline Persiapan Kulit Pengantin</h2>
+          <div class="bg-oak/10 rounded-sm p-6 mb-8">
+            <ul class="list-none space-y-3 mb-0">
+              <li><strong>3 bulan sebelum:</strong> Konsultasi dermatolog, mulai rutinitas baru</li>
+              <li><strong>2 bulan sebelum:</strong> Treatment profesional (facial, chemical peel ringan)</li>
+              <li><strong>1 bulan sebelum:</strong> Intensifkan hidrasi, hindari eksperimen produk baru</li>
+              <li><strong>1 minggu sebelum:</strong> Gentle care only, fokus pada nutrisi dan hidrasi</li>
+              <li><strong>1 hari sebelum:</strong> Istirahat cukup, skincare minimal</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Fase 1: 3 Bulan Sebelum Wedding (Fondasi)</h2>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Konsultasi dengan Dermatolog</h3>
+          <p class="text-clay-dark/80 mb-4">Langkah pertama yang paling penting:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Analisis jenis kulit dan masalah spesifik (jerawat, flek, pori besar)</li>
+            <li>Rekomendasi produk yang sesuai</li>
+            <li>Rencana treatment jika diperlukan (laser, chemical peel, dll)</li>
+          </ul>
+          <p class="text-clay-dark/80 mb-8">
+            <em>Tips:</em> Di Pontianak, banyak klinik kecantikan yang menyediakan konsultasi. Pastikan pilih yang memiliki dokter berlisensi.
+          </p>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Bangun Rutinitas Dasar</h3>
+          <p class="text-clay-dark/80 mb-4">Rutinitas skincare sederhana tapi konsisten:</p>
+          <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Pagi</h4>
+              <ol class="list-decimal pl-4 text-sm text-clay-dark/70 space-y-1">
+                <li>Gentle cleanser</li>
+                <li>Toner hydrating</li>
+                <li>Serum (Vitamin C/Niacinamide)</li>
+                <li>Moisturizer ringan</li>
+                <li>Sunscreen SPF 50</li>
+              </ol>
+            </div>
+            <div class="bg-white rounded-sm p-4 border border-bone">
+              <h4 class="font-bold text-clay-dark mb-2">Malam</h4>
+              <ol class="list-decimal pl-4 text-sm text-clay-dark/70 space-y-1">
+                <li>Double cleansing</li>
+                <li>Toner</li>
+                <li>Serum (Retinol/AHA/BHA)</li>
+                <li>Moisturizer</li>
+                <li>Lip balm</li>
+              </ol>
+            </div>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Fase 2: 2 Bulan Sebelum Wedding (Intensif)</h2>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Treatment Profesional</h3>
+          <p class="text-clay-dark/80 mb-4">Saatnya melakukan treatment di klinik kecantikan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Hydrafacial</strong> — deep cleansing + hidrasi intensif</li>
+            <li><strong>Chemical peel ringan</strong> — mengangkat sel kulit mati (hindari yang agresif)</li>
+            <li><strong>Laser toning</strong> — untuk flek dan warna kulit tidak merata</li>
+            <li><strong>Microneedling</strong> — memperbaiki tekstur kulit (minimal 6 minggu sebelum wedding)</li>
+          </ul>
+          <div class="bg-red-50 border border-red-200 rounded-sm p-6 mb-8">
+            <p class="text-clay-dark/80 text-sm mb-0">
+              <strong>Peringatan:</strong> JANGAN melakukan treatment agresif kurang dari 1 bulan sebelum wedding. Kulit butuh waktu untuk recovery dan bisa terjadi purging atau iritasi.
+            </p>
+          </div>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Masker dan Eksfoliasi Rutin</h3>
+          <p class="text-clay-dark/80 mb-4">Tambahkan ke rutinitas mingguan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Eksfoliasi 1-2x seminggu</strong> — pilih yang gentle (enzyme atau PHA)</li>
+            <li><strong>Sheet mask 2-3x seminggu</strong> — hyaluronic acid atau centella</li>
+            <li><strong>Clay mask 1x seminggu</strong> — untuk mengontrol minyak (khusus kulit berminyak)</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Fase 3: 1 Bulan Sebelum Wedding (Stabilisasi)</h2>
+          
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Jangan Eksperimen Produk Baru!</h3>
+          <p class="text-clay-dark/80 mb-6">
+            Ini adalah aturan emas: <strong>1 bulan sebelum wedding, JANGAN mencoba produk baru</strong>. Risiko alergi atau breakout tidak sebanding dengan potensi manfaatnya. Tetap gunakan produk yang sudah cocok.
+          </p>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Fokus pada Hidrasi</h3>
+          <p class="text-clay-dark/80 mb-4">Kulit terhidrasi = makeup menempel sempurna:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Tingkatkan penggunaan serum hyaluronic acid</li>
+            <li>Gunakan sleeping mask 2-3x seminggu</li>
+            <li>Minum air putih minimal 2 liter sehari</li>
+            <li>Kurangi kafein dan alkohol</li>
+          </ul>
+
+          <h3 class="font-serif text-xl text-clay-dark mt-8 mb-3 font-medium">Perhatikan Area Khusus</h3>
+          <p class="text-clay-dark/80 mb-4">Jangan lupakan area yang sering terabaikan:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Bibir</strong> — lip scrub + lip balm setiap malam</li>
+            <li><strong>Leher</strong> — skincare sampai ke leher dan dada</li>
+            <li><strong>Tangan</strong> — hand cream + cuticle oil (untuk foto cincin!)</li>
+            <li><strong>Punggung</strong> — jika gaun backless, perhatikan skincare area ini</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Fase 4: 1 Minggu Sebelum Wedding (Gentle Care)</h2>
+          <p class="text-clay-dark/80 mb-4">Minggu terakhir adalah tentang gentle care:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li><strong>Stop retinol</strong> — 5-7 hari sebelum untuk menghindari iritasi</li>
+            <li><strong>Hindari eksfoliasi agresif</strong> — cukup gentle cleanser</li>
+            <li><strong>Sheet mask setiap malam</strong> — untuk hidrasi maksimal</li>
+            <li><strong>Tidur cukup</strong> — minimal 7-8 jam untuk menghindari kantung mata</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">H-1: Sehari Sebelum Wedding</h2>
+          <p class="text-clay-dark/80 mb-4">Persiapan terakhir:</p>
+          <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-6">
+            <li>Skincare minimal — cleanser, toner, moisturizer, lip balm</li>
+            <li>Jangan gunakan produk aktif apapun</li>
+            <li>Hindari makanan asin (menyebabkan wajah bengkak)</li>
+            <li>Tidur early — istirahat adalah skincare terbaik</li>
+            <li>Relax — stress bisa memicu breakout last minute!</li>
+          </ul>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Nutrisi untuk Kulit Glowing</h2>
+          <p class="text-clay-dark/80 mb-4">Skincare dari dalam sama pentingnya:</p>
+          <div class="bg-green-50 border border-green-200 rounded-sm p-6 mb-8">
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Air putih 2-3 liter/hari</strong> — hidrasi dari dalam</li>
+              <li><strong>Vitamin C</strong> — dari jeruk, kiwi, atau suplemen</li>
+              <li><strong>Omega-3</strong> — dari ikan salmon atau suplemen fish oil</li>
+              <li><strong>Sayuran hijau</strong> — antioksidan untuk kulit sehat</li>
+              <li><strong>Kurangi gula dan processed food</strong> — penyebab inflamasi dan jerawat</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Kesalahan yang Harus Dihindari</h2>
+          <div class="bg-red-50 border border-red-200 rounded-sm p-6 mb-8">
+            <ul class="list-disc pl-6 text-clay-dark/80 space-y-2 mb-0">
+              <li><strong>Facial mendadak H-3</strong> — bisa menyebabkan purging atau breakout</li>
+              <li><strong>Bleaching atau waxing wajah H-1</strong> — iritasi dan kemerahan</li>
+              <li><strong>Produk baru di minggu terakhir</strong> — risiko alergi</li>
+              <li><strong>Over-exfoliate</strong> — kulit jadi sensitif dan tipis</li>
+              <li><strong>Begadang</strong> — kantung mata dan wajah kusam</li>
+            </ul>
+          </div>
+
+          <h2 class="font-serif text-2xl text-clay-dark mt-12 mb-4 font-medium">Konsultasi dengan MUA</h2>
+          <p class="text-clay-dark/80 mb-6">
+            Sebagai MUA, kami juga bisa memberikan saran tentang persiapan kulit. Saat trial makeup, kami akan menganalisis kondisi kulitmu dan memberikan rekomendasi untuk perbaikan sebelum hari H.
+          </p>
+          
+          <div class="bg-clay text-creme p-8 rounded-sm text-center">
+            <p class="font-serif text-2xl mb-4">Siap Mempersiapkan Kulit untuk Hari Spesialmu?</p>
+            <p class="mb-6 opacity-90">Hubungi kami untuk konsultasi makeup sekaligus diskusi persiapan kulit.</p>
+            <a 
+              href="https://wa.me/6287812234804?text=Halo%20Ci%20Anisa%2C%20saya%20mau%20konsultasi%20persiapan%20kulit%20sebelum%20wedding"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-creme text-clay-dark px-8 py-3 font-bold uppercase tracking-wider text-sm hover:bg-bone transition-colors"
+            >
+              Konsultasi Sekarang
+            </a>
+          </div>
+        </div>
+        
+        <!-- Author -->
+        <div class="mt-16 pt-8 border-t border-bone">
+          <p class="text-sm text-clay-dark/60">
+            Ditulis oleh <strong class="text-clay-dark">ByAnisaPutri</strong> · MUA Pontianak sejak 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>
