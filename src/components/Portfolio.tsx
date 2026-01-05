@@ -11,43 +11,43 @@ const Portfolio = () => {
   const items = [
     {
       title: "Wedding Look",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/wedding.webp",
+      img: "https://cdn.byanisaputri.my.id/wedding.webp",
       tag: "Wedding",
       alt: "Makeup Wedding Pontianak oleh @byanisaputri - MUA Kalimantan Barat"
     },
     {
       title: "Engagement",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/engagement.webp",
+      img: "https://cdn.byanisaputri.my.id/engagement.webp",
       tag: "Engagement",
       alt: "Makeup Engagement Pontianak - Lamaran & Tunangan"
     },
     {
       title: "Wisuda",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/wisuda.webp",
+      img: "https://cdn.byanisaputri.my.id/wisuda.webp",
       tag: "Wisuda",
       alt: "Makeup Wisuda Pontianak - Graduation Look"
     },
     {
       title: "Bridesmaid",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/bridesmaid.webp",
+      img: "https://cdn.byanisaputri.my.id/bridesmaid.webp",
       tag: "Bridesmaid",
       alt: "Makeup Bridesmaid Pontianak - Pengiring Pengantin"
     },
     {
       title: "Yudisium",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/yudisium.webp",
+      img: "https://cdn.byanisaputri.my.id/yudisium.webp",
       tag: "Yudisium",
       alt: "Makeup Yudisium Pontianak - Wisudawati Cantik"
     },
     {
       title: "Pengajian",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/pengajian.webp",
+      img: "https://cdn.byanisaputri.my.id/pengajian.webp",
       tag: "Pengajian",
       alt: "Makeup Pengajian Pontianak - Acara Keluarga"
     },
     {
       title: "Glam Mom",
-      img: "https://pub-2a266b71caf241d988c803db023fe22f.r2.dev/ibu%20ibu.webp",
+      img: "https://cdn.byanisaputri.my.id/ibu%20ibu.webp",
       tag: "Glam Mom",
       alt: "Glam Mom Makeup Pontianak - MUA untuk Ibu Pengantin & Wisudawan"
     },
